@@ -1,0 +1,69 @@
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+}
+
+header {
+  background-image: url("../images/header_obraz_2.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
+header .navigation nav ul {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  width: 35%;
+  padding-right: 30px;
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+header .navigation nav ul li {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+header .navigation nav ul li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .2s ease, background-color .2s ease;
+}
+
+header .navigation nav ul li:hover:after {
+  width: 100%;
+  background: #FFF;
+}
+
+header .navigation nav ul li a {
+  color: #CCC;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header .header-text {
+  text-align: center;
+  margin-top: 250px;
+}
+
+header .header-text .napis-gora {
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+header .header-text .napis-dol {
+  font-size: 40px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #CCC;
+}
+
+/*# sourceMappingURL=style.css.map */
