@@ -1,21 +1,205 @@
-body { box-sizing: border-box; }
+body {
+  box-sizing: border-box;
+}
 
-.container { max-width: 1300px; width: 100%; }
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
 
-header { background-image: url("../images/header_obraz_2.jpg"); background-size: cover; height: 600px; }
+header {
+  background-image: url("../images/header_obraz_2.jpg");
+  background-size: cover;
+  height: 600px;
+}
 
-header .navigation nav ul { display: -ms-flexbox; display: flex; float: right; -ms-flex-pack: justify; justify-content: space-between; width: 35%; padding-right: 30px; padding-top: 30px; list-style-type: none; }
+header .navigation nav ul {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  width: 35%;
+  padding-right: 30px;
+  padding-top: 30px;
+  list-style-type: none;
+}
 
-header .navigation nav ul li { font-family: 'Cabin Sketch', cursive; }
+header .navigation nav ul li {
+  font-family: 'Cabin Sketch', cursive;
+}
 
-header .navigation nav ul li:after { content: ''; display: block; margin: auto; height: 2px; width: 0px; background: transparent; transition: width .2s ease, background-color .2s ease; }
+header .navigation nav ul li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .2s ease, background-color .2s ease;
+}
 
-header .navigation nav ul li:hover:after { width: 100%; background: #FFF; }
+header .navigation nav ul li:hover:after {
+  width: 100%;
+  background: #FFF;
+}
 
-header .navigation nav ul li a { color: #CCC; font-size: 20px; text-decoration: none; }
+header .navigation nav ul li a {
+  color: #CCC;
+  font-size: 20px;
+  text-decoration: none;
+}
 
-header .header-text { text-align: center; margin-top: 250px; }
+header .header-text {
+  text-align: center;
+  margin-top: 250px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
 
-header .header-text .napis-gora { font-family: 'Comfortaa', cursive; font-size: 60px; color: #FFF; font-weight: bold; }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-header .header-text .napis-dol { font-size: 40px; font-family: 'Cabin Sketch', cursive; color: #CCC; }
+header .header-text .napis-gora {
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+header .header-text .napis-dol {
+  font-size: 40px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #CCC;
+}
+
+/* SECTION O MNIE */
+.o-mnie {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.o-mnie h1 {
+  font-size: 50px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.o-mnie p {
+  font-size: 25px;
+  color: #262626;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.o-mnie .o-mnie-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.o-mnie .o-mnie-content img {
+  max-width: 400px;
+  width: 100%;
+  height: 250px;
+}
+
+.o-mnie .o-mnie-content p {
+  font-size: 15px;
+  width: 400px;
+  text-align: justify;
+  padding-left: 10px;
+  color: #262626;
+  font-family: 'PT Mono', monospace;
+  font-weight: bold;
+}
+
+/* SECTION KARUZELA */
+.karuzela {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 90px;
+  background-color: #262626;
+}
+
+.karuzela h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  color: #FFF;
+}
+
+.karuzela p {
+  text-align: left;
+  font-family: 'Comfortaa', cursive;
+  padding: 30px;
+  margin-right: 30px;
+  margin-left: 70px;
+  line-height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.karuzela p a {
+  text-decoration: none;
+  text-transform: none;
+  margin-left: 12px;
+  color: #FFF;
+}
+
+.karuzela p a:hover {
+  color: #CCC;
+}
+
+.karuzela .carousel-cell {
+  background-size: cover;
+  font-family: 'Cabin Sketch', cursive;
+  color: #FFF;
+  padding-top: 100px;
+  width: 85%;
+  height: 440px;
+  margin: 0 auto;
+  counter-increment: carousel-cell;
+  border-radius: 20px;
+}
+
+.karuzela .carousel-cell .content {
+  background-color: #262626;
+  color: #FFF;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.karuzela .carousel-cell .content h2:hover {
+  animation: buttonPulse 1s infinite;
+}
+
+.karuzela .carousel-cell .content h2 a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
