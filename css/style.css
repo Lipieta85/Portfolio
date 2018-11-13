@@ -2,34 +2,54 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  text-align: center;
-  background-size: cover;
-}
-
 header {
   background-image: url("../images/header_obraz_2.jpg");
   background-size: cover;
   height: 600px;
 }
 
-header .navigation nav ul {
-  display: flex;
-  float: right;
-  justify-content: space-between;
-  width: 35%;
-  padding-right: 30px;
-  padding-top: 30px;
-  list-style-type: none;
+header .container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
-header .navigation nav ul li {
+header .container-fluid .navigation {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+header .container-fluid .navigation p {
+  display: none;
+  float: left;
+  color: #CCC;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 30px;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+header .container-fluid .navigation nav {
+  width: 60%;
+  float: right;
+}
+
+header .container-fluid .navigation nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  width: 90%;
+  padding-top: 10px;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+header .container-fluid .navigation nav ul li {
   font-family: 'Cabin Sketch', cursive;
 }
 
-header .navigation nav ul li:after {
+header .container-fluid .navigation nav ul li:after {
   content: '';
   display: block;
   margin: auto;
@@ -39,20 +59,20 @@ header .navigation nav ul li:after {
   transition: width .2s ease, background-color .2s ease;
 }
 
-header .navigation nav ul li:hover:after {
+header .container-fluid .navigation nav ul li:hover:after {
   width: 100%;
-  background: #FFF;
+  background: #CCC;
 }
 
-header .navigation nav ul li a {
+header .container-fluid .navigation nav ul li a {
   color: #CCC;
   font-size: 20px;
   text-decoration: none;
 }
 
-header .header-text {
+header .container-fluid .header-text {
   text-align: center;
-  margin-top: 250px;
+  padding-top: 180px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -65,14 +85,14 @@ header .header-text {
   }
 }
 
-header .header-text .napis-gora {
+header .container-fluid .header-text .napis-gora {
   font-family: 'Comfortaa', cursive;
   font-size: 60px;
   color: #FFF;
   font-weight: bold;
 }
 
-header .header-text .napis-dol {
+header .container-fluid .header-text .napis-dol {
   font-size: 40px;
   font-family: 'Cabin Sketch', cursive;
   color: #CCC;
@@ -82,9 +102,12 @@ header .header-text .napis-dol {
 .o-mnie {
   margin-top: 50px;
   margin-bottom: 90px;
+  text-align: center;
 }
 
 .o-mnie h1 {
+  padding-top: 50px;
+  margin-bottom: 10px;
   font-size: 50px;
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
@@ -110,7 +133,7 @@ header .header-text .napis-dol {
 }
 
 .o-mnie .o-mnie-content p {
-  font-size: 15px;
+  font-size: 14.5px;
   width: 400px;
   text-align: justify;
   padding-left: 10px;
@@ -122,7 +145,6 @@ header .header-text .napis-dol {
 /* SECTION KARUZELA */
 .karuzela {
   margin-top: 30px;
-  margin-bottom: 30px;
   padding-bottom: 90px;
   background-color: #262626;
 }
@@ -176,6 +198,7 @@ header .header-text .napis-dol {
   background-color: #262626;
   color: #FFF;
   width: 60%;
+  text-align: center;
   margin: 0 auto;
   border-radius: 10px;
   opacity: 0.7;
@@ -200,6 +223,43 @@ header .header-text .napis-dol {
 .karuzela .carousel-cell .content h2 a {
   color: #FFF;
   text-decoration: none;
+}
+
+/* SECTION KONTAKT */
+.kontakt {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Comfortaa', cursive;
+  background-image: url("../images/kontakt_obraz_1.jpg");
+}
+
+.kontakt h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.kontakt p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #262626;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+}
+
+footer p i {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

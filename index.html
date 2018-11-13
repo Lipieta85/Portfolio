@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Comfortaa|PT+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -18,22 +18,29 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <div class="navigation">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#o-mnie">O mnie</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#kontakt">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="navigation" id="nav">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <p id="nav-p">Rafał Lipieta</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-9">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#o-mnie">O mnie</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#kontakt">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <div class="header-text">
                 <div class="napis-gora">
@@ -47,7 +54,7 @@
     </header>
 
     <section class="o-mnie" id="o-mnie">
-        <div class="container">
+        <div class="container-fluid">
             <h1>O mnie</h1>
             <p>Dlaczego programowanie ?</p>
             <div class="o-mnie-content">
@@ -65,24 +72,25 @@
     </section>
 
     <section class="karuzela" id="portfolio">
-        <h1>PORTFOLIO</h1>
-        <p>
-            Layout Cut:
-            <a href="#carousel-cell1">Awax Site</a>,
-            <a href="#carousel-cell2">Golden Site</a>,
-            <a href="#carousel-cell3">Sansara-Group Site</a>,
-            <br>
-            JavaScript:
-            <a href="#carousel-cell4">Paper-Rock-Scissors Game</a>,
-            <br>
-            React:
-            <a href="#carousel-cell5">React-JSON app</a>,
-            <a href="#carousel-cell6">ScoreKeeper</a>,
-            <a href="#carousel-cell7">Sudoku</a>,
+        <div class="container-fluid">
+            <h1>PORTFOLIO</h1>
+            <p>
+                Layout Cut:
+                <a href="#carousel-cell1">Awax Site</a>,
+                <a href="#carousel-cell2">Golden Site</a>,
+                <a href="#carousel-cell3">Sansara-Group Site</a>,
+                <br>
+                JavaScript:
+                <a href="#carousel-cell4">Paper-Rock-Scissors Game</a>,
+                <br>
+                React:
+                <a href="#carousel-cell5">React-JSON app</a>,
+                <a href="#carousel-cell6">ScoreKeeper</a>,
+                <a href="#carousel-cell7">Sudoku</a>,
 
-        </p>
-        <div class="main-carousel"></div>
-        <script id="template-product-list" type="x-tmpl-mustache">
+            </p>
+            <div class="main-carousel"></div>
+            <script id="template-product-list" type="x-tmpl-mustache">
             <div class="container" id={{id}}>
                 <div class="carousel-cell" style="background-image:url({{image}})">
                     <div class="content">
@@ -92,68 +100,86 @@
                 </div>
             </div>
         </script>
-        <script>
-            var productsData = [
-                {
-                    id: 'carousel-cell1',
-                    title: 'Layout Cut: Awax Site',
-                    link: 'https://lipieta85.github.io/layout_cut_awax/',
-                    description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap v4. Strona w pełni RWD',
-                    reset: 'cell1',
-                    image: 'images/layout_cut_awax.jpg',
-                },
-                {
-                    id: 'carousel-cell2',
-                    title: 'Layout Cut: Golden Site',
-                    link: 'https://lipieta85.github.io/layout_cut-golden/',
-                    description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap. Strona w pełni RWD',
-                    reset: 'none',
-                    image: 'images/layout_cut_golden.jpg',
-                },
-                {
-                    id: 'carousel-cell3',
-                    title: 'Layout Cut: Sansara Group',
-                    description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap, JavaScript, JQuery. Strona w pełni RWD',
-                    link: 'https://lipieta85.github.io/Layout_Cut_JWG/',
-                    reset: 'none',
-                    image: 'images/layout_cut_sansara.jpg',
-                },
-                {
-                    id: 'carousel-cell4',
-                    title: 'Paper Rock Scissors Game',
-                    description: 'Użyte technologie: Vanilla JavaScript',
-                    link: 'https://lipieta85.github.io/paper_rock_scissors_javascript/',
-                    reset: 'none',
-                    image: 'images/javascript_game.jpg',
-                },
-                {
-                    id: "carousel-cell5",
-                    title: 'React JSON app',
-                    description: 'Użyte technologie: REACT, Axios, JSON',
-                    link: 'https://lipieta85.github.io/Unamo_React_JSON_App/',
-                    reset: 'none',
-                    image: 'images/React_app_1.jpg',
-                },
-                {
-                    id: "carousel-cell6",
-                    title: 'Scorekeeper',
-                    description: 'Użyte technologie: React',
-                    link: 'https://lipieta85.github.io/scorekeeper/',
-                    reset: 'none',
-                    image: 'images/React_app_2.jpg',
-                },
-                {
-                    id: "carousel-cell7",
-                    title: 'Sudoku',
-                    description: 'Użyte technologie: React',
-                    link: 'https://lipieta85.github.io/sudoku/',
-                    reset: 'none',
-                    image: 'images/React_app_3.jpg',
-                },
+            <script>
+                var productsData = [
+                    {
+                        id: 'carousel-cell1',
+                        title: 'Layout Cut: Awax Site',
+                        link: 'https://lipieta85.github.io/layout_cut_awax/',
+                        description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap v4. Strona w pełni RWD',
+                        reset: 'cell1',
+                        image: 'images/layout_cut_awax.jpg',
+                    },
+                    {
+                        id: 'carousel-cell2',
+                        title: 'Layout Cut: Golden Site',
+                        link: 'https://lipieta85.github.io/layout_cut-golden/',
+                        description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap. Strona w pełni RWD',
+                        reset: 'none',
+                        image: 'images/layout_cut_golden.jpg',
+                    },
+                    {
+                        id: 'carousel-cell3',
+                        title: 'Layout Cut: Sansara Group',
+                        description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap, JavaScript, JQuery. Strona w pełni RWD',
+                        link: 'https://lipieta85.github.io/Layout_Cut_JWG/',
+                        reset: 'none',
+                        image: 'images/layout_cut_sansara.jpg',
+                    },
+                    {
+                        id: 'carousel-cell4',
+                        title: 'Paper Rock Scissors Game',
+                        description: 'Użyte technologie: Vanilla JavaScript',
+                        link: 'https://lipieta85.github.io/paper_rock_scissors_javascript/',
+                        reset: 'none',
+                        image: 'images/javascript_game.jpg',
+                    },
+                    {
+                        id: "carousel-cell5",
+                        title: 'React JSON app',
+                        description: 'Użyte technologie: REACT, Axios, JSON',
+                        link: 'https://lipieta85.github.io/Unamo_React_JSON_App/',
+                        reset: 'none',
+                        image: 'images/React_app_1.jpg',
+                    },
+                    {
+                        id: "carousel-cell6",
+                        title: 'Scorekeeper',
+                        description: 'Użyte technologie: React',
+                        link: 'https://lipieta85.github.io/scorekeeper/',
+                        reset: 'none',
+                        image: 'images/React_app_2.jpg',
+                    },
+                    {
+                        id: "carousel-cell7",
+                        title: 'Sudoku',
+                        description: 'Użyte technologie: React',
+                        link: 'https://lipieta85.github.io/sudoku/',
+                        reset: 'none',
+                        image: 'images/React_app_3.jpg',
+                    },
 
-            ];
-        </script>
+                ];
+            </script>
+        </div>
     </section>
+
+    <section class="kontakt" id="kontakt">
+        <div class="container-fluid">
+            <h1>Kontakt</h1>
+            <p>Masz ciekawe zlecenie? Jesteś zainteresowany współpracą długoterminową? Super!</p>
+            <p>Napisz lub zadzwoń</p>
+            <p><i class="fas fa-envelope"></i> rafal.lipieta1@wp.pl</p>
+            <p><i class="fas fa-phone"></i> 883384288</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <p>Rafał Lipieta ® 2018</p>
+            <p>Designed & coded with <i class="fas fa-heart"></i> by myself</p>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>

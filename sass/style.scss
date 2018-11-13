@@ -2,73 +2,85 @@ body {
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    width: 100%;
-    text-align: center;
-    background-size: cover;
-}
-
 header {
     background-image: url("../images/header_obraz_2.jpg");
     background-size: cover;
     height: 600px;
-    .navigation {
-        nav {
-            ul {
-                display: flex;
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        .navigation {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            z-index: 1;
+            p {
+                display: none;
+                float: left;
+                color: #CCC;
+                font-family: 'Cabin Sketch', cursive;
+                font-size: 30px;
+                padding-left: 30px;
+                margin-bottom: 0;
+            }
+            nav {
+                width: 60%;
                 float: right;
-                justify-content: space-between;
-                width: 35%;
-                padding-right: 30px;
-                padding-top: 30px;
-                list-style-type: none;
-                li {
-                    font-family: 'Cabin Sketch', cursive;
-                    &:after {
-                        content: '';
-                        display: block;
-                        margin: auto;
-                        height: 2px;
-                        width: 0px;
-                        background: transparent;
-                        transition: width .2s ease, background-color .2s ease;
-                    }
-                    &:hover:after {
-                        width: 100%;
-                        background: #FFF;
-                    }
-                    a {
-                        color: #CCC;
-                        font-size: 20px;
-                        text-decoration: none;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 30px;
+                    width: 90%;
+                    padding-top: 10px;
+                    list-style-type: none;
+                    margin-bottom: 0;
+                    li {
+                        font-family: 'Cabin Sketch', cursive;
+                        &:after {
+                            content: '';
+                            display: block;
+                            margin: auto;
+                            height: 2px;
+                            width: 0px;
+                            background: transparent;
+                            transition: width .2s ease, background-color .2s ease;
+                        }
+                        &:hover:after {
+                            width: 100%;
+                            background: #CCC;
+                        }
+                        a {
+                            color: #CCC;
+                            font-size: 20px;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
         }
-    }
-    .header-text {
-        text-align: center;
-        margin-top: 250px;
-        animation: 1s ease-out 0s 1 slideInFromLeft;
-        @keyframes slideInFromLeft {
-            0% {
-                transform: translateX(-100%);
+        .header-text {
+            text-align: center;
+            padding-top: 180px;
+            animation: 1s ease-out 0s 1 slideInFromLeft;
+            @keyframes slideInFromLeft {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
             }
-            100% {
-                transform: translateX(0);
+            .napis-gora {
+                font-family: 'Comfortaa', cursive;
+                font-size: 60px;
+                color: #FFF;
+                font-weight: bold;
             }
-        }
-        .napis-gora {
-            font-family: 'Comfortaa', cursive;
-            font-size: 60px;
-            color: #FFF;
-            font-weight: bold;
-        }
-        .napis-dol {
-            font-size: 40px;
-            font-family: 'Cabin Sketch', cursive;
-            color: #CCC;
+            .napis-dol {
+                font-size: 40px;
+                font-family: 'Cabin Sketch', cursive;
+                color: #CCC;
+            }
         }
     }
 }
@@ -78,7 +90,10 @@ header {
 .o-mnie {
     margin-top: 50px;
     margin-bottom: 90px;
+    text-align: center;
     h1 {
+        padding-top: 50px;
+        margin-bottom: 10px;
         font-size: 50px;
         font-family: 'Comfortaa', cursive;
         font-weight: bold;
@@ -99,7 +114,7 @@ header {
             height: 250px;
         }
         p {
-            font-size: 15px;
+            font-size: 14.5px;
             width: 400px;
             text-align: justify;
             padding-left: 10px;
@@ -114,7 +129,6 @@ header {
 
 .karuzela {
     margin-top: 30px;
-    margin-bottom: 30px;
     padding-bottom: 90px;
     background-color: #262626;
     h1 {
@@ -160,6 +174,7 @@ header {
             background-color: #262626;
             color: #FFF;
             width: 60%;
+            text-align: center;
             margin: 0 auto;
             border-radius: 10px;
             opacity: 0.7;
@@ -183,6 +198,42 @@ header {
                     text-decoration: none;
                 }
             }
+        }
+    }
+}
+
+/* SECTION KONTAKT */
+
+.kontakt {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Comfortaa', cursive;
+    background-image: url("../images/kontakt_obraz_1.jpg");
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #262626;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p {
+        text-align: center;
+        color: #FFF;
+        margin: 0;
+        i {
+            color: red;
         }
     }
 }
