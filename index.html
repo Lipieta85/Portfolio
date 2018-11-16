@@ -20,28 +20,27 @@
 
     <header id="header">
         <div class="container-fluid">
-            <div class="navigation" id="nav">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-3">
-                        <p id="nav-p">Rafał Lipieta</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-9">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#o-mnie">O mnie</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio">Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="#kontakt">Kontakt</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Rafał Lipieta</a>
+                <button class="navbar-toggler" type="button" id="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#o-mnie">O mnie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
             <div class="header-text">
                 <div class="napis-gora">
                     <p>Rafał Lipieta</p>
@@ -75,15 +74,15 @@
         <div class="container-fluid">
             <h1>PORTFOLIO</h1>
             <p>
-                Layout Cut:
+                <span>Layout Cut:<span>
                 <a href="#carousel-cell1">Awax Site</a>,
                 <a href="#carousel-cell2">Golden Site</a>,
                 <a href="#carousel-cell3">Sansara-Group Site</a>,
                 <br>
-                JavaScript:
+                <span>JavaScript:</span>
                 <a href="#carousel-cell4">Paper-Rock-Scissors Game</a>,
                 <br>
-                React:
+                <span>React:</span>
                 <a href="#carousel-cell5">React-JSON app</a>,
                 <a href="#carousel-cell6">ScoreKeeper</a>,
                 <a href="#carousel-cell7">Sudoku</a>,
@@ -99,7 +98,7 @@
                     </div>
                 </div>
             </div>
-        </script>
+            </script>
             <script>
                 var productsData = [
                     {
@@ -144,7 +143,7 @@
                     },
                     {
                         id: "carousel-cell6",
-                        title: 'Scorekeeper',
+                        title: 'Score-keeper',
                         description: 'Użyte technologie: React',
                         link: 'https://lipieta85.github.io/scorekeeper/',
                         reset: 'none',
@@ -186,6 +185,10 @@
     <script src="js/mustache.js"></script>
     <script src="js/script.js"></script>
     <script src="js/hash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
