@@ -1,8 +1,24 @@
+/* li hide after click - tablet, smartphone */
+
+$( '.navbar-collapse' ).on("click", function(){
+    $('.navbar-collapse').removeClass('show');
+  });
+
+/* Scrolling */
+
+$('nav, .arrow').find('a').click(function (e) {
+    e.preventDefault();
+    var section = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(section).offset().top
+    });
+});
+
 /* NAVBAR */
 
 $(window).scroll('change', function () {
     var scrolled_val = $(document).scrollTop().valueOf();
-    if (scrolled_val > 290) {
+    if (scrolled_val > 250) {
         $('.navbar').css({ 'position': 'fixed', 'width': '100%', 'background-color': '#262626', 'border-bottom': '1px solid #CCC', 'padding-top': '0', 'text-align': 'center' });
         $('.navbar').find('a').css({ 'color': '#CCC', 'font-size': '20px' });
         $('.navbar-brand').css({ 'display': 'block', 'color': '#CCC' });

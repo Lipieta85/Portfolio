@@ -79,6 +79,16 @@ header {
                 color: #CCC;
             }
         }
+        .arrow {
+            position: fixed;
+            float: right;
+            right: 30px;
+            bottom: 30px;
+            z-index: 1;
+            i {
+                color: red;
+            }
+        }
     }
 }
 
@@ -121,7 +131,7 @@ header {
             }
             .header-text {
                 padding-top: 40px;
-                padding-bottom: 40px;
+                padding-bottom: 50px;
             }
         }
     }
@@ -166,7 +176,7 @@ header {
             }
             .header-text {
                 padding-top: 40px;
-                padding-bottom: 40px;
+                padding-bottom: 50px;
                 .napis-gora {
                     font-size: 35px;
                 }
@@ -220,13 +230,13 @@ header {
 
 @media(min-width: 767px) and (max-width: 991px) {
     .o-mnie {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 767px) {
     .o-mnie {
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 30px;
         text-align: center;
         h1 {
@@ -302,7 +312,6 @@ header {
     }
     .carousel-cell {
         background-size: cover;
-        font-family: 'Cabin Sketch', cursive;
         color: #FFF;
         padding-top: 100px;
         width: 85%;
@@ -336,6 +345,9 @@ header {
                 a {
                     color: #FFF;
                     text-decoration: none;
+                    &:hover {
+                        color: red;
+                    }
                 }
             }
         }
@@ -351,6 +363,12 @@ header {
             margin-left: 10px;
             line-height: 45px;
             font-size: 20px;
+        }
+        .carousel-cell {
+            width: 100%;
+            .content {
+                width: 70%;
+            }
         }
     }
 }

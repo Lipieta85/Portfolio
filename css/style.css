@@ -89,6 +89,18 @@ header .container-fluid .header-text .napis-dol {
   color: #CCC;
 }
 
+header .container-fluid .arrow {
+  position: fixed;
+  float: right;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+header .container-fluid .arrow i {
+  color: red;
+}
+
 @media (min-width: 767px) and (max-width: 991px) {
   header {
     height: auto;
@@ -124,7 +136,7 @@ header .container-fluid .header-text .napis-dol {
   }
   header .container-fluid .header-text {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -163,7 +175,7 @@ header .container-fluid .header-text .napis-dol {
   }
   header .container-fluid .header-text {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
   header .container-fluid .header-text .napis-gora {
     font-size: 35px;
@@ -219,13 +231,13 @@ header .container-fluid .header-text .napis-dol {
 
 @media (min-width: 767px) and (max-width: 991px) {
   .o-mnie {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 767px) {
   .o-mnie {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -307,7 +319,6 @@ header .container-fluid .header-text .napis-dol {
 
 .karuzela .carousel-cell {
   background-size: cover;
-  font-family: 'Cabin Sketch', cursive;
   color: #FFF;
   padding-top: 100px;
   width: 85%;
@@ -348,6 +359,10 @@ header .container-fluid .header-text .napis-dol {
   text-decoration: none;
 }
 
+.karuzela .carousel-cell .content h2 a:hover {
+  color: red;
+}
+
 @media (max-width: 767px) {
   .karuzela {
     padding-bottom: 70px;
@@ -358,6 +373,12 @@ header .container-fluid .header-text .napis-dol {
     margin-left: 10px;
     line-height: 45px;
     font-size: 20px;
+  }
+  .karuzela .carousel-cell {
+    width: 100%;
+  }
+  .karuzela .carousel-cell .content {
+    width: 70%;
   }
 }
 
