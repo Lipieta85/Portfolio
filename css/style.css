@@ -115,6 +115,7 @@ body {
   }
   header .container-fluid .navbar .collapse ul {
     padding-right: 0;
+    padding-left: 30px;
   }
   header .container-fluid .navbar .collapse ul li:after {
     content: '';
@@ -154,6 +155,7 @@ body {
   }
   header .container-fluid .navbar .collapse ul {
     padding-right: 0;
+    padding-left: 30px;
   }
   header .container-fluid .navbar .collapse ul li:after {
     content: '';
