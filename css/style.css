@@ -65,7 +65,7 @@ body {
 
 .header .container-fluid .header-text {
   text-align: center;
-  padding-top: 180px;
+  padding-top: 160px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -137,7 +137,7 @@ body {
     padding-bottom: 2px;
   }
   header .container-fluid .header-text {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 50px;
   }
 }
@@ -177,7 +177,8 @@ body {
     padding-bottom: 2px;
   }
   header .container-fluid .header-text {
-    padding-top: 40px;
+    margin-top: -10px;
+    padding-top: 0;
     padding-bottom: 50px;
   }
   header .container-fluid .header-text .napis-gora {
