@@ -3,7 +3,7 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
-.container-fluid {
+.container {
     max-width: 1400px;
     margin: 0;
     padding: 0;
@@ -12,10 +12,10 @@ body {
 /* HEADER */
 
 .header {
-    background-image: url("../images/header_obraz_2.jpg");
+    background-image: url("../images/header_obraz_2b.png");
     background-size: cover;
     height: 600px;
-    .container-fluid {
+    .container {
         margin: 0;
         padding: 0;
         .navbar {
@@ -27,6 +27,18 @@ body {
                 display: none;
                 color: #CCC;
                 padding-left: 30px;
+            }
+            .logo {
+                padding-left: 30px;
+                padding-top: 20px;
+                img {
+                    width: 100px;
+                    height: 40px
+                }
+                span {
+                    color: #CCC;
+                    font-size: 30px;
+                }
             }
             .collapse {
                 ul {
@@ -51,7 +63,8 @@ body {
                         a {
                             color: #CCC;
                             text-decoration: none;
-                            font-size: 25px;
+                            font-size: 20px;
+                            padding-top: 20px;
                             padding-bottom: 2px;
                         }
                     }
@@ -88,100 +101,68 @@ body {
             bottom: 30px;
             z-index: 1;
             i {
-                color: red;
+                color: #229024;
             }
         }
     }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-    header {
+    .header {
         height: auto;
-        .container-fluid {
+        .container {
             .navbar {
-                width: 100%;
-                text-align: center;
+                flex-direction: column;  
                 .navbar-brand {
+                    padding-left: 30px;
+                }
+                .logo {
                     padding-left: 0;
+                    padding-top: 30px;
+                }
+                #button {
+                    margin-top: 60px;
                 }
                 .collapse {
                     ul {
                         padding-right: 0;
-                        padding-left: 30px;
-                        li {
-                            &:after {
-                                content: '';
-                                display: block;
-                                margin: auto;
-                                height: 1px;
-                                width: 0;
-                                background: transparent;
-                                transition: width .2s ease, background-color .2s ease;
-                            }
-                            &:hover:after {
-                                width: 13%;
-                                background: #CCC;
-                            }
-                            a {
-                                color: #CCC;
-                                text-decoration: none;
-                                font-size: 25px;
-                                padding-bottom: 2px;
-                            }
-                        }
                     }
                 }
             }
             .header-text {
-                padding-top: 0;
-                padding-bottom: 50px;
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 20px;
             }
         }
     }
 }
 
 @media (max-width: 767px) {
-    header {
+    .header {
         height: auto;
-        .container-fluid {
+        .container {
             .navbar {
-                width: 100%;
-                text-align: center;
+                flex-direction: column;               
                 .navbar-brand {
+                    padding-left: 30px;
+                }
+                .logo {
                     padding-left: 0;
+                    padding-top: 30px;
+                }
+                #button {
+                    margin-top: 60px;
                 }
                 .collapse {
                     ul {
                         padding-right: 0;
-                        padding-left: 30px;
-                        li {
-                            &:after {
-                                content: '';
-                                display: block;
-                                margin: auto;
-                                height: 1px;
-                                width: 0;
-                                background: transparent;
-                                transition: width .2s ease, background-color .2s ease;
-                            }
-                            &:hover:after {
-                                width: 23.5%;
-                                background: #CCC;
-                            }
-                            a {
-                                color: #CCC;
-                                text-decoration: none;
-                                font-size: 25px;
-                                padding-bottom: 2px;
-                            }
-                        }
                     }
                 }
             }
             .header-text {
-                margin-top: -10px;
-                padding-top: 0;
-                padding-bottom: 50px;
+                padding-top: 50px;
+                padding-bottom: 30px;
                 .napis-gora {
                     font-size: 35px;
                 }
@@ -301,7 +282,7 @@ body {
         font-weight: bold;
         text-align: center;
         span {
-            color: red;
+            color: #229024;
         }
         a {
             text-decoration: none;
@@ -309,7 +290,7 @@ body {
             margin-left: 12px;
             color: #FFF;
             &:hover {
-                color: red;
+                color: #229024;
             }
         }
     }
@@ -349,7 +330,7 @@ body {
                     color: #FFF;
                     text-decoration: none;
                     &:hover {
-                        color: red;
+                        color: #229024;
                     }
                 }
             }
@@ -367,7 +348,7 @@ body {
         font-size: 20px;
         &:hover {
             text-decoration: none;
-            color: red;
+            color: #229024;
         }
     }
 }
@@ -401,7 +382,8 @@ body {
 .kontakt {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url("../images/kontakt_obraz_1.jpg");
+    background: url("../images/kontakt_background.jpg") center cover;
+    
     h1 {
         text-transform: uppercase;
         font-size: 50px;
@@ -431,7 +413,7 @@ body {
         color: #FFF;
         margin: 0;
         i {
-            color: red;
+            color: #229024;
         }
     }
 }

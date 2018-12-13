@@ -3,7 +3,7 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
-.container-fluid {
+.container {
   max-width: 1400px;
   margin: 0;
   padding: 0;
@@ -11,37 +11,52 @@ body {
 
 /* HEADER */
 .header {
-  background-image: url("../images/header_obraz_2.jpg");
+  background-image: url("../images/header_obraz_2b.png");
   background-size: cover;
   height: 600px;
 }
 
-.header .container-fluid {
+.header .container {
   margin: 0;
   padding: 0;
 }
 
-.header .container-fluid .navbar {
+.header .container .navbar {
   z-index: 1;
   padding: 2px;
   display: flex;
   justify-content: center;
 }
 
-.header .container-fluid .navbar .navbar-brand {
+.header .container .navbar .navbar-brand {
   display: none;
   color: #CCC;
   padding-left: 30px;
 }
 
-.header .container-fluid .navbar .collapse ul {
+.header .container .navbar .logo {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.header .container .navbar .logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.header .container .navbar .logo span {
+  color: #CCC;
+  font-size: 30px;
+}
+
+.header .container .navbar .collapse ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding-right: 30px;
 }
 
-.header .container-fluid .navbar .collapse ul li:after {
+.header .container .navbar .collapse ul li:after {
   content: '';
   display: block;
   margin: auto;
@@ -51,19 +66,20 @@ body {
   transition: width .2s ease, background-color .2s ease;
 }
 
-.header .container-fluid .navbar .collapse ul li:hover:after {
+.header .container .navbar .collapse ul li:hover:after {
   width: 85%;
   background: #CCC;
 }
 
-.header .container-fluid .navbar .collapse ul li a {
+.header .container .navbar .collapse ul li a {
   color: #CCC;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  padding-top: 20px;
   padding-bottom: 2px;
 }
 
-.header .container-fluid .header-text {
+.header .container .header-text {
   text-align: center;
   padding-top: 160px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -78,19 +94,19 @@ body {
   }
 }
 
-.header .container-fluid .header-text .napis-gora {
+.header .container .header-text .napis-gora {
   font-size: 60px;
   color: #FFF;
   font-weight: bold;
 }
 
-.header .container-fluid .header-text .napis-dol {
+.header .container .header-text .napis-dol {
   font-size: 40px;
   font-family: 'Cabin Sketch', cursive;
   color: #CCC;
 }
 
-.header .container-fluid .arrow {
+.header .container .arrow {
   position: fixed;
   float: right;
   right: 30px;
@@ -98,93 +114,65 @@ body {
   z-index: 1;
 }
 
-.header .container-fluid .arrow i {
-  color: red;
+.header .container .arrow i {
+  color: #229024;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  header {
+  .header {
     height: auto;
   }
-  header .container-fluid .navbar {
-    width: 100%;
-    text-align: center;
+  .header .container .navbar {
+    flex-direction: column;
   }
-  header .container-fluid .navbar .navbar-brand {
-    padding-left: 0;
-  }
-  header .container-fluid .navbar .collapse ul {
-    padding-right: 0;
+  .header .container .navbar .navbar-brand {
     padding-left: 30px;
   }
-  header .container-fluid .navbar .collapse ul li:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 0;
-    background: transparent;
-    transition: width .2s ease, background-color .2s ease;
+  .header .container .navbar .logo {
+    padding-left: 0;
+    padding-top: 30px;
   }
-  header .container-fluid .navbar .collapse ul li:hover:after {
-    width: 13%;
-    background: #CCC;
+  .header .container .navbar #button {
+    margin-top: 60px;
   }
-  header .container-fluid .navbar .collapse ul li a {
-    color: #CCC;
-    text-decoration: none;
-    font-size: 25px;
-    padding-bottom: 2px;
+  .header .container .navbar .collapse ul {
+    padding-right: 0;
   }
-  header .container-fluid .header-text {
-    padding-top: 0;
-    padding-bottom: 50px;
+  .header .container .header-text {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  header {
+  .header {
     height: auto;
   }
-  header .container-fluid .navbar {
-    width: 100%;
-    text-align: center;
+  .header .container .navbar {
+    flex-direction: column;
   }
-  header .container-fluid .navbar .navbar-brand {
-    padding-left: 0;
-  }
-  header .container-fluid .navbar .collapse ul {
-    padding-right: 0;
+  .header .container .navbar .navbar-brand {
     padding-left: 30px;
   }
-  header .container-fluid .navbar .collapse ul li:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 0;
-    background: transparent;
-    transition: width .2s ease, background-color .2s ease;
+  .header .container .navbar .logo {
+    padding-left: 0;
+    padding-top: 30px;
   }
-  header .container-fluid .navbar .collapse ul li:hover:after {
-    width: 23.5%;
-    background: #CCC;
+  .header .container .navbar #button {
+    margin-top: 60px;
   }
-  header .container-fluid .navbar .collapse ul li a {
-    color: #CCC;
-    text-decoration: none;
-    font-size: 25px;
-    padding-bottom: 2px;
+  .header .container .navbar .collapse ul {
+    padding-right: 0;
   }
-  header .container-fluid .header-text {
-    margin-top: -10px;
-    padding-top: 0;
-    padding-bottom: 50px;
+  .header .container .header-text {
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
-  header .container-fluid .header-text .napis-gora {
+  .header .container .header-text .napis-gora {
     font-size: 35px;
   }
-  header .container-fluid .header-text .napis-dol {
+  .header .container .header-text .napis-dol {
     font-size: 30px;
   }
 }
@@ -305,7 +293,7 @@ body {
 }
 
 .karuzela p span {
-  color: red;
+  color: #229024;
 }
 
 .karuzela p a {
@@ -316,7 +304,7 @@ body {
 }
 
 .karuzela p a:hover {
-  color: red;
+  color: #229024;
 }
 
 .karuzela .carousel-cell {
@@ -362,7 +350,7 @@ body {
 }
 
 .karuzela .carousel-cell .content h2 a:hover {
-  color: red;
+  color: #229024;
 }
 
 .karuzela .projekty {
@@ -379,7 +367,7 @@ body {
 
 .karuzela .projekty:hover {
   text-decoration: none;
-  color: red;
+  color: #229024;
 }
 
 @media (max-width: 767px) {
@@ -410,7 +398,7 @@ body {
 .kontakt {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url("../images/kontakt_obraz_1.jpg");
+  background: url("../images/kontakt_background.jpg") center cover;
 }
 
 .kontakt h1 {
@@ -445,7 +433,7 @@ body {
 }
 
 .footer p i {
-  color: red;
+  color: #229024;
 }
 
 /*# sourceMappingURL=style.css.map */
