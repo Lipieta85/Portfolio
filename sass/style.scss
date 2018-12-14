@@ -201,6 +201,7 @@ body {
             max-width: 400px;
             width: 100%;
             height: 250px;
+            padding-right: 10px;
         }
         p {
             font-size: 14.5px;
@@ -380,10 +381,9 @@ body {
 /* SECTION KONTAKT */
 
 .kontakt {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 50px;
-    background: url("../images/kontakt_background.jpg") center cover;
-    
+    background: url("../images/kontakt_background.jpg") center cover;    
     h1 {
         text-transform: uppercase;
         font-size: 50px;
