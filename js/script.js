@@ -19,7 +19,7 @@ $('nav, .arrow').find('a').click(function (e) {
 $(window).scroll('change', function () {
     var scrolled_val = $(document).scrollTop().valueOf();
     if (scrolled_val > 250) {
-        $('.navbar').css({ 'position': 'fixed', 'width': '100%', 'background-color': '#262626', 'border-bottom': '1px solid #CCC', 'padding-top': '0', 'text-align': 'center', 'flex-direction': 'row' });
+        $('.navbar').css({ 'position': 'fixed', 'width': '100%', 'background-color': '#262626', 'border-bottom': '1px solid #CCC', 'padding-top': '0', 'text-align': 'center' });
         $('.navbar').find('a').css({ 'color': '#CCC', 'font-size': '20px', 'padding-top': '10px' });
         $('.navbar-brand').css({ 'display': 'block', 'color': '#CCC' });
         $('.logo').css( 'display', 'none');
@@ -31,9 +31,6 @@ $(window).scroll('change', function () {
         $('.navbar-brand').css('display', 'none');
         $('.logo').css( 'display', 'block');
         $('button').css( 'margin-top', '60px' );
-        if ($('.navbar').width() < 991 ){
-            $('.navbar').css( 'flex-direction', 'column' );
-        }   
     }
 });
 
