@@ -1,4 +1,4 @@
-/* li hide after click - tablet, smartphone */
+/* li hide after click -- tablet, smartphone */
 
 $( '.navbar-collapse' ).on("click", function(){
     $('.navbar-collapse').removeClass('show');
