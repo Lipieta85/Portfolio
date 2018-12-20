@@ -33,10 +33,7 @@ $(window).scroll('change', function () {
         $('button').css( 'margin-top', '60px' );
         if ($('.navbar').width() < 991 ){
             $('.navbar').css( 'flex-direction', 'column' );
-        }
-        else {
-            $('.navbar').css( 'flex-direction', 'row' );
-        }       
+        }   
     }
 });
 
