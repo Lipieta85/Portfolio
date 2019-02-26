@@ -1,11 +1,11 @@
 body {
   box-sizing: border-box;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
   max-width: 1400px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -39,24 +39,24 @@ body {
   padding-top: 20px;
 }
 
-.header .container .navbar .logo img {
-  width: 100px;
-  height: 40px;
+.header .container .navbar .logo .image {
+  max-width: 120px;
+  height: 50px;
 }
 
-.header .container .navbar .logo span {
+.header .container .navbar .logo .navbar-toggler-icon {
   color: #CCC;
   font-size: 30px;
 }
 
-.header .container .navbar .collapse ul {
+.header .container .navbar .collapse .navbar-nav {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding-right: 30px;
 }
 
-.header .container .navbar .collapse ul li:after {
+.header .container .navbar .collapse .navbar-nav .nav-item:after {
   content: '';
   display: block;
   margin: auto;
@@ -66,15 +66,15 @@ body {
   transition: width .2s ease, background-color .2s ease;
 }
 
-.header .container .navbar .collapse ul li:hover:after {
+.header .container .navbar .collapse .navbar-nav .nav-item:hover:after {
   width: 85%;
   background: #CCC;
 }
 
-.header .container .navbar .collapse ul li a {
+.header .container .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: #CCC;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   padding-top: 20px;
   padding-bottom: 2px;
 }
@@ -94,13 +94,13 @@ body {
   }
 }
 
-.header .container .header-text .napis-gora {
+.header .container .header-text .text-up {
   font-size: 60px;
   color: #FFF;
   font-weight: bold;
 }
 
-.header .container .header-text .napis-dol {
+.header .container .header-text .text-down {
   font-size: 40px;
   font-family: 'Cabin Sketch', cursive;
   color: #CCC;
@@ -114,7 +114,7 @@ body {
   z-index: 1;
 }
 
-.header .container .arrow i {
+.header .container .arrow .arrow-icon {
   color: #229024;
 }
 
@@ -130,13 +130,13 @@ body {
     padding-left: 30px;
   }
   .header .container .navbar .logo {
-    padding-left: 0;
+    padding-left: 0px;
     padding-top: 30px;
   }
   .header .container .navbar #button {
     margin-top: 60px;
   }
-  .header .container .navbar .collapse ul {
+  .header .container .navbar .collapse .navbar-nav {
     padding-right: 0;
   }
   .header .container .header-text {
@@ -164,7 +164,7 @@ body {
   .header .container .navbar #button {
     margin-top: 60px;
   }
-  .header .container .navbar .collapse ul {
+  .header .container .navbar .collapse .navbar-nav {
     flex-direction: column;
     padding-right: 0;
   }
@@ -172,64 +172,61 @@ body {
     padding-top: 50px;
     padding-bottom: 30px;
   }
-  .header .container .header-text .napis-gora {
+  .header .container .header-text .text-up {
     font-size: 35px;
   }
-  .header .container .header-text .napis-dol {
+  .header .container .header-text .text-down {
     font-size: 30px;
   }
 }
 
 /* SECTION O MNIE */
-.o-mnie {
-  margin-top: 60px;
+.about-me {
+  margin-top: 40px;
   margin-bottom: 90px;
   text-align: center;
 }
 
-.o-mnie h1 {
+.about-me .about-me-header {
   padding-top: 50px;
   margin-bottom: 10px;
-  font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.o-mnie p {
+.about-me .about-me-header-text {
   font-size: 25px;
   color: #262626;
-  font-family: 'Cabin Sketch', cursive;
 }
 
-.o-mnie .o-mnie-content {
+.about-me .about-me-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
 }
 
-.o-mnie .o-mnie-content img {
+.about-me .about-me-content .content-image {
   max-width: 400px;
   width: 100%;
   height: 250px;
   padding-right: 10px;
 }
 
-.o-mnie .o-mnie-content p {
+.about-me .about-me-content p {
   font-size: 14.5px;
-  width: 400px;
+  width: 320px;
   text-align: justify;
   padding-left: 10px;
   color: #262626;
-  font-family: 'PT Mono', monospace;
   font-weight: bold;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .o-mnie {
+  .about-me {
     margin-top: 40px;
   }
-  .o-mnie .o-mnie-content img {
+  .about-me .about-me-content .content-image {
     max-width: 400px;
     width: 100%;
     height: 250px;
@@ -238,36 +235,34 @@ body {
 }
 
 @media (max-width: 767px) {
-  .o-mnie {
+  .about-me {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
   }
-  .o-mnie h1 {
+  .about-me .about-me-header {
     padding-top: 30px;
     margin-bottom: 10px;
-    font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
   }
-  .o-mnie p {
+  .about-me .about-me-header-text {
     font-size: 25px;
     color: #262626;
-    font-family: 'Cabin Sketch', cursive;
   }
-  .o-mnie .o-mnie-content {
+  .about-me .about-me-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
   }
-  .o-mnie .o-mnie-content img {
+  .about-me .about-me-content .content-image {
     max-width: 400px;
     width: 100%;
     height: 251px;
     padding-right: 0;
   }
-  .o-mnie .o-mnie-content p {
+  .about-me .about-me-content .content-image-text {
     font-size: 14.5px;
     width: 400px;
     text-align: justify;
@@ -278,14 +273,14 @@ body {
   }
 }
 
-/* SECTION KARUZELA */
-.karuzela {
+/* SECTION PORTFOLIO */
+.portfolio {
   margin-top: 35px;
   padding-bottom: 90px;
   background-color: #262626;
 }
 
-.karuzela h1 {
+.portfolio .portfolio-header {
   padding-top: 60px;
   text-align: center;
   font-size: 40px;
@@ -293,8 +288,7 @@ body {
   color: #FFF;
 }
 
-.karuzela p {
-  text-align: left;
+.portfolio .portfolio-header-text {
   padding: 30px;
   font-size: 20px;
   text-transform: uppercase;
@@ -303,22 +297,22 @@ body {
   text-align: center;
 }
 
-.karuzela p span {
+.portfolio .portfolio-header-text .header-text-content {
   color: #229024;
 }
 
-.karuzela p a {
+.portfolio .portfolio-header-text a {
   text-decoration: none;
   text-transform: none;
   margin-left: 12px;
   color: #FFF;
 }
 
-.karuzela p a:hover {
+.portfolio .portfolio-header-text a:hover {
   color: #229024;
 }
 
-.karuzela .carousel-cell {
+.portfolio .portfolio-carousel-cell {
   background-size: cover;
   color: #FFF;
   padding-top: 100px;
@@ -329,7 +323,7 @@ body {
   border-radius: 20px;
 }
 
-.karuzela .carousel-cell .content {
+.portfolio .portfolio-carousel-cell .portfolio-content {
   background-color: #262626;
   color: #FFF;
   width: 60%;
@@ -351,20 +345,16 @@ body {
   }
 }
 
-.karuzela .carousel-cell .content h2:hover {
+.portfolio .portfolio-carousel-cell .portfolio-content .content-header:hover {
   animation: buttonPulse 1s infinite;
 }
 
-.karuzela .carousel-cell .content h2 a {
+.portfolio .portfolio-carousel-cell .portfolio-content .content-header .content-header-link {
   color: #FFF;
   text-decoration: none;
 }
 
-.karuzela .carousel-cell .content h2 a:hover {
-  color: #229024;
-}
-
-.karuzela .projekty {
+.portfolio .projects {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
@@ -376,28 +366,28 @@ body {
   font-size: 20px;
 }
 
-.karuzela .projekty:hover {
+.portfolio .projects:hover {
   text-decoration: none;
   color: #229024;
 }
 
 @media (max-width: 767px) {
-  .karuzela {
+  .portfolio {
     padding-bottom: 70px;
   }
-  .karuzela p {
+  .portfolio .portfolio-header-text {
     padding: 5px;
     margin-right: 5px;
     margin-left: 5px;
     font-size: 17px;
   }
-  .karuzela .carousel-cell {
+  .portfolio .portfolio-carousel-cell {
     width: 100%;
   }
-  .karuzela .carousel-cell .content {
+  .portfolio .portfolio-carousel-cell .content {
     width: 70%;
   }
-  .karuzela .projekty {
+  .portfolio .projects {
     text-align: center;
     padding-left: 6px;
     padding-right: 6px;
@@ -406,26 +396,25 @@ body {
 }
 
 /* SECTION KONTAKT */
-.kontakt {
-  padding-top: 40px;
-  padding-bottom: 50px;
+.contact {
+  padding-top: 10px;
+  padding-bottom: 30px;
   background: url("../images/kontakt_background.jpg") center cover;
 }
 
-.kontakt h1 {
+.contact .contact-header {
   text-transform: uppercase;
-  font-size: 50px;
   text-align: center;
   font-weight: bold;
 }
 
-.kontakt p {
+.contact .contact-text {
   text-align: center;
   font-weight: bold;
 }
 
 @media (max-width: 767px) {
-  .kontakt {
+  .contact {
     padding-top: 20px;
   }
 }
@@ -433,17 +422,17 @@ body {
 /* FOOTER */
 .footer {
   background-color: #262626;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.footer p {
+.footer .footer-content {
   text-align: center;
   color: #FFF;
-  margin: 0;
+  margin: 0px;
 }
 
-.footer p i {
+.footer .footer-content .footer-content-icon {
   color: #229024;
 }
 

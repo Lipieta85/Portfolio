@@ -20,14 +20,14 @@ $(window).scroll('change', function () {
     var scrolled_val = $(document).scrollTop().valueOf();
     if (scrolled_val > 250) {
         $('.navbar').css({ 'position': 'fixed', 'width': '100%', 'background-color': '#262626', 'border-bottom': '1px solid #CCC', 'padding-top': '0', 'text-align': 'center' });
-        $('.navbar').find('a').css({ 'color': '#CCC', 'font-size': '20px', 'padding-top': '10px' });
+        $('.navbar').find('a').css({ 'color': '#CCC', 'font-size': '25px', 'padding-top': '18px', 'padding-bottom': '18px' });
         $('.navbar-brand').css({ 'display': 'block', 'color': '#CCC' });
         $('.logo').css( 'display', 'none');
         $('button').css( 'margin-top', '0' )
     }
     else {
         $('.navbar').css({ 'position': 'relative', 'background-color': 'inherit', 'border-bottom': 'inherit' });
-        $('.navbar').find('a').css({ 'color': '#CCC', 'font-size': '20px', 'padding-top': '20px' });
+        $('.navbar').find('a').css({ 'color': '#CCC', 'font-size': '25px', 'padding-top': '20px' });
         $('.navbar-brand').css('display', 'none');
         $('.logo').css( 'display', 'block');
         $('button').css( 'margin-top', '60px' );

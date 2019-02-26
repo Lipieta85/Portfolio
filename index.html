@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Comfortaa|PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
 </head>
@@ -23,8 +23,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">Rafał Lipieta</a>
                 <div class="logo">
-                    <img src="images/Logo-RL.png">
-                    <img src="images/web.png">
+                    <img src="images/Logo-RL.png" alt="logo" class="image">
                 </div>
                 <button class="navbar-toggler" type="button" id="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,40 +33,41 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#o-mnie">O mnie</a>
+                            <a class="nav-link" href="#about-me">O mnie</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                            <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <div class="header-text">
-                <div class="napis-gora">
+                <div class="text-up">
                     <p>Rafał Lipieta</p>
                 </div>
-                <div class="napis-dol">
+                <div class="text-down">
                     <p>Web Developer</p>
                 </div>
             </div>
             <div class="arrow">
-                <a href="#header"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
+                <a href="#header"><i class="fas fa-arrow-alt-circle-up fa-3x arrow-icon"></i></a>
             </div>
         </div>
     </header>
 
-    <section class="o-mnie" id="o-mnie">
+    <section class="about-me" id="about-me">
         <div class="container">
-            <h1>O mnie</h1>
-            <p>Dlaczego programowanie ?</p>
-            <div class="o-mnie-content">
-                <img src="images/omnie_obraz_1.jpeg" alt="illustration">
-                <p> Programowaniem zacząłem zajmować się dwa lata temu. Napisałem wtedy swoją pierwszą stronę
+            <h2 class="about-me-header">O mnie</h2>
+            <p class="about-me-header-text">Dlaczego programowanie ?</p>
+            <div class="about-me-content">
+                <img src="images/obraz_3.jpeg" alt="illustration" class="content-image">
+                <p class="content-image-text"> Programowaniem zacząłem zajmować się dwa lata temu. Napisałem wtedy swoją pierwszą stronę
                     interetową. Rok temu postanowiłem rozwijać swoje
-                    umiejętności w kierunku web developmentu. We wrześniu 2018 roku ukończyłem kurs Kodilla Web Developer.
+                    umiejętności w kierunku web developmentu. We wrześniu 2018 roku ukończyłem kurs Kodilla Web
+                    Developer.
                     Lubię tworzyć nowe rzeczy, poszukiwać rozwiązań problemów. W życiu staram się kierować
                     dewizą: Bez ciężkiej pracy nie ma wyników. Kiedy nie siedzę przed komputerem to spędzam czas z
                     rodziną… ale to już jest całkiem inna historia.</p>
@@ -75,11 +75,11 @@
         </div>
     </section>
 
-    <section class="karuzela" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <h1>PORTFOLIO</h1>
-            <p>
-                <span>Layout Cut:<span>
+            <h1 class="portfolio-header">PORTFOLIO</h1>
+            <p class="portfolio-header-text">
+                <span class="header-text-content">Layout Cut:<span>
                         <br>
                         <a href="#carousel-cell1">Awax Site,</a>
                         <a href="#carousel-cell2">Golden Site,</a>
@@ -99,14 +99,14 @@
             </p>
             <div class="main-carousel"></div>
             <script id="template-product-list" type="x-tmpl-mustache">
-            <div class="container" id={{id}}>
-                <div class="carousel-cell" style="background-image:url({{image}})">
-                    <div class="content">
-                        <h2><a href="{{link}}">{{title}}</a></h2>
-                        <div class="opis">{{{description}}}<div>
+                <div class="container" id={{id}}>
+                    <div class="portfolio-carousel-cell" style="background-image:url({{image}})">
+                        <div class="portfolio-content">
+                            <h2 class="content-header"><a href="{{link}}" class="content-header-link">{{title}}</a></h2>
+                            <div class="content-description">{{{description}}}<div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </script>
             <script>
                 var productsData = [
@@ -177,21 +177,25 @@
 
                 ];
             </script>
-            <a target="_blank" class="projekty" href="https://github.com/Lipieta85?tab=repositories">>>> Więcej
-                zrealizowanych projektów <<<</a> </div> </section> <section class="kontakt" id="kontakt">
-                    <div class="container">
-                        <h1>Kontakt</h1>
-                        <p>Masz ciekawe zlecenie? Jesteś zainteresowany współpracą długoterminową? Super!</p>
-                        <p>Napisz lub zadzwoń</p>
-                        <p><i class="fas fa-envelope"></i> rafal.lipieta1@wp.pl</p>
-                        <p><i class="fas fa-phone"></i> 883384288</p>
-                    </div>
+            <a target="_blank" class="projects" href="https://github.com/Lipieta85?tab=repositories">>>> Więcej
+                zrealizowanych projektów <<<
+            </a> 
+        </div> 
     </section>
-
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1 class="contact-header">Kontakt</h1>
+                <p class="contact-text">Masz ciekawe zlecenie? Jesteś zainteresowany współpracą długoterminową? Super!</p>
+                <p class="contact-text">Napisz lub zadzwoń</p>
+                <p class="contact-text"><i class="fas fa-envelope"></i> rafal.lipieta1@wp.pl</p>
+                <p class="contact-text"><i class="fas fa-phone"></i> 883384288</p>
+        </div>
+    </section>
+                    
     <section class="footer">
         <div class="container">
-            <p>Rafał Lipieta ® 2018</p>
-            <p>Designed & coded with <i class="fas fa-heart"></i> by myself</p>
+            <p class="footer-content">Rafał Lipieta ® 2018</p>
+            <p class="footer-content">Designed & coded with <i class="fas fa-heart footer-content-icon"></i> by me</p>
         </div>
     </section>
 
