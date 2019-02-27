@@ -25,7 +25,7 @@ body {
             flex-direction: row;
             .navbar-brand {
                 display: none;
-                color: #CCC;
+                color: #FFF;
                 padding-left: 30px;
             }
             .logo {
@@ -33,10 +33,10 @@ body {
                 padding-top: 20px;
                 .image {
                     max-width: 120px;
-                    height: 50px
+                    height: 50px;
                 }
                 .navbar-toggler-icon {
-                    color: #CCC;
+                    color: #FFF;
                     font-size: 30px;
                 }
             }
@@ -58,10 +58,10 @@ body {
                         }
                         &:hover:after {
                             width: 85%;
-                            background: #CCC;
+                            background: #FFF;
                         }
                         .nav-link {
-                            color: #CCC;
+                            color: #FFF;
                             text-decoration: none;
                             font-size: 25px;
                             padding-top: 20px;
@@ -74,6 +74,7 @@ body {
         .header-text {
             text-align: center;
             padding-top: 160px;
+            color: #FFF;
             animation: 1s ease-out 0s 1 slideInFromLeft;
             @keyframes slideInFromLeft {
                 0% {
@@ -85,13 +86,11 @@ body {
             }
             .text-up {
                 font-size: 60px;
-                color: #FFF;
                 font-weight: bold;
             }
             .text-down {
                 font-size: 40px;
                 font-family: 'Cabin Sketch', cursive;
-                color: #CCC;
             }
         }
         .arrow {
@@ -109,7 +108,7 @@ body {
 
 @media (min-width: 767px) and (max-width: 991px) {
     .header {
-        height: auto;
+        height: 420px;
         .container {
             .navbar {
                 flex-direction: column;  
@@ -133,8 +132,11 @@ body {
             }
             .header-text {
                 text-align: center;
-                padding-top: 50px;
-                padding-bottom: 20px;
+                padding-top: 35px;
+                padding-bottom: 10px;
+                .text-up {
+                    font-size: 50px;
+                }
             }
         }
     }
@@ -142,7 +144,7 @@ body {
 
 @media (max-width: 767px) {
     .header {
-        height: auto;
+        height: 420px;
         .container {
             .navbar {
                 flex-direction: column;   
@@ -178,7 +180,7 @@ body {
     }
 }
 
-/* SECTION O MNIE */
+/* SECTION ABOUT ME */
 
 .about-me {
     margin-top: 40px;
@@ -382,7 +384,7 @@ body {
     }
 }
 
-/* SECTION KONTAKT */
+/* SECTION CONTACT */
 
 .contact {
     padding-top: 10px;

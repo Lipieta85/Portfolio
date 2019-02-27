@@ -30,7 +30,7 @@ body {
 
 .header .container .navbar .navbar-brand {
   display: none;
-  color: #CCC;
+  color: #FFF;
   padding-left: 30px;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 .header .container .navbar .logo .navbar-toggler-icon {
-  color: #CCC;
+  color: #FFF;
   font-size: 30px;
 }
 
@@ -68,11 +68,11 @@ body {
 
 .header .container .navbar .collapse .navbar-nav .nav-item:hover:after {
   width: 85%;
-  background: #CCC;
+  background: #FFF;
 }
 
 .header .container .navbar .collapse .navbar-nav .nav-item .nav-link {
-  color: #CCC;
+  color: #FFF;
   text-decoration: none;
   font-size: 25px;
   padding-top: 20px;
@@ -82,6 +82,7 @@ body {
 .header .container .header-text {
   text-align: center;
   padding-top: 160px;
+  color: #FFF;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -96,14 +97,12 @@ body {
 
 .header .container .header-text .text-up {
   font-size: 60px;
-  color: #FFF;
   font-weight: bold;
 }
 
 .header .container .header-text .text-down {
   font-size: 40px;
   font-family: 'Cabin Sketch', cursive;
-  color: #CCC;
 }
 
 .header .container .arrow {
@@ -120,7 +119,7 @@ body {
 
 @media (min-width: 767px) and (max-width: 991px) {
   .header {
-    height: auto;
+    height: 420px;
   }
   .header .container .navbar {
     flex-direction: column;
@@ -142,14 +141,17 @@ body {
   }
   .header .container .header-text {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  .header .container .header-text .text-up {
+    font-size: 50px;
   }
 }
 
 @media (max-width: 767px) {
   .header {
-    height: auto;
+    height: 420px;
   }
   .header .container .navbar {
     flex-direction: column;
@@ -181,7 +183,7 @@ body {
   }
 }
 
-/* SECTION O MNIE */
+/* SECTION ABOUT ME */
 .about-me {
   margin-top: 40px;
   margin-bottom: 90px;
@@ -396,7 +398,7 @@ body {
   }
 }
 
-/* SECTION KONTAKT */
+/* SECTION CONTACT */
 .contact {
   padding-top: 10px;
   padding-bottom: 30px;
