@@ -4,7 +4,8 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -14,9 +15,9 @@ body {
 .header {
     background-image: url("../images/header_obraz_2b.png");
     background-size: cover;
-    height: 600px;
+    height: 400px;
+    width: 100%;
     .container {
-        margin: 0;
         padding: 0;
         .navbar {
             z-index: 1;
@@ -73,7 +74,7 @@ body {
         }
         .header-text {
             text-align: center;
-            padding-top: 160px;
+            padding-top: 60px;
             color: #FFF;
             animation: 1s ease-out 0s 1 slideInFromLeft;
             @keyframes slideInFromLeft {
@@ -183,7 +184,7 @@ body {
 /* SECTION ABOUT ME */
 
 .about-me {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 90px;
     text-align: center;
     .about-me-header {
@@ -274,7 +275,7 @@ body {
 /* SECTION PORTFOLIO */
 
 .portfolio {
-    margin-top: 35px;
+    margin-top: 60px;
     padding-bottom: 90px;
     background-color: #262626;
     .portfolio-header {
@@ -387,7 +388,7 @@ body {
 /* SECTION CONTACT */
 
 .contact {
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom: 30px;
     background: url("../images/kontakt_background.jpg") center cover;    
     .contact-header {
