@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -12,9 +12,9 @@ body {
 
 /* HEADER */
 .header {
-  background-image: url("../images/header_obraz_2b.png");
+  background-image: url("../images/header_obraz_3.png");
   background-size: cover;
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
@@ -57,6 +57,10 @@ body {
   padding-right: 30px;
 }
 
+.header .container .navbar .collapse .navbar-nav .nav-item {
+  margin-left: 38px;
+}
+
 .header .container .navbar .collapse .navbar-nav .nav-item:after {
   content: '';
   display: block;
@@ -75,14 +79,16 @@ body {
 .header .container .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: #FFF;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
   padding-bottom: 2px;
+  font-weight: 400;
 }
 
 .header .container .header-text {
-  text-align: center;
-  padding-top: 60px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 100px;
   color: #FFF;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -98,12 +104,12 @@ body {
 
 .header .container .header-text .text-up {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 900;
+  line-height: 1.2;
 }
 
 .header .container .header-text .text-down {
-  font-size: 40px;
-  font-family: 'Cabin Sketch', cursive;
+  font-size: 24px;
 }
 
 .header .container .arrow {
@@ -186,20 +192,20 @@ body {
 
 /* SECTION ABOUT ME */
 .about-me {
-  margin-top: 60px;
-  margin-bottom: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
 .about-me .about-me-header {
-  padding-top: 50px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 32px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .about-me .about-me-header-text {
-  font-size: 25px;
+  font-size: 19px;
   color: #262626;
 }
 
@@ -218,6 +224,7 @@ body {
 }
 
 .about-me .about-me-content p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 14.5px;
   width: 320px;
   text-align: justify;
