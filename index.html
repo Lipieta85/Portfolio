@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,600,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -36,7 +35,7 @@
                             <a class="nav-link" href="#about-me">O mnie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link" href="#projects">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Kontakt</a>
@@ -50,12 +49,9 @@
                 </div>
                 <div class="text-down">
                     <p>Jestem Junior Web Developerem</p>
-                    <p>Specjalizuje się w  <strong class="typewrite" 
-                                                   data-period="2000" 
-                                                   data-type='[ "Cięciu Layoutu", "Javascript", "React" ]'
-                                        >
-                                            <span class="wrap"></span>
-                    </strong>
+                    <p>Specjalizuje się w <strong class="typewrite" data-period="2000" data-type='[ "Cięciu Layoutu", "Javascript", "React" ]'>
+                            <span class="wrap"></span>
+                        </strong>
                     </p>
                 </div>
             </div>
@@ -71,7 +67,7 @@
             <p class="about-me-header-text">Dlaczego programowanie ?</p>
             <div class="about-me-content">
                 <img src="images/obraz_3.jpeg" alt="illustration" class="content-image">
-                <p class="content-image-text"> 
+                <p class="content-image-text">
                     Programowaniem zacząłem zajmować się dwa lata temu. Napisałem wtedy swoją pierwszą stronę
                     interetową. Rok temu postanowiłem rozwijać swoje
                     umiejętności w kierunku web developmentu. We wrześniu 2018 roku ukończyłem kurs Kodilla Web
@@ -84,137 +80,256 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="projects" id="projects">
         <div class="container">
-            <h1 class="portfolio-header">PORTFOLIO</h1>
-            <p class="portfolio-header-text">
-                <span class="header-text-content">Layout Cut:<span>
-                        <br>
-                        <a href="#carousel-cell1">Awax Site,</a>
-                        <a href="#carousel-cell2">Golden Site,</a>
-                        <a href="#carousel-cell3">Sansara-Group Site,</a>
-                        <br>
-                        <br>
-                        <span>JavaScript:</span>
-                        <br>
-                        <a href="#carousel-cell4">Paper-Rock-Scissors Game,</a>
-                        <br>
-                        <br>
-                        <span>React:</span>
-                        <br>
-                        <a href="#carousel-cell5">MERN Kanban-App,</a>
-                        <a href="#carousel-cell6">React-JSON app,</a>
-                        <a href="#carousel-cell7">ScoreKeeper,</a>
-                        <a href="#carousel-cell8">Sudoku,</a>
-                        <br>
-                        <br>
-                        <span>Angular:</span>
-                        <br>
-                        <a href="#carousel-cell9">Angular Shop</a>
-            </p>
-            <div class="main-carousel"></div>
-            <script id="template-product-list" type="x-tmpl-mustache">
-                <div class="container" id={{id}}>
-                    <div class="portfolio-carousel-cell" style="background-image:url({{image}})">
-                        <div class="portfolio-content">
-                            <h2 class="content-header"><a href="{{link}}" class="content-header-link">{{title}}</a></h2>
-                            <div class="content-description">{{{description}}}<div>
+            <div>
+                <p class="projects-header">Portfolio</p>
+            </div>
+            <div class="projects-header-text">
+                <p>Projekty które zrobiłem</p>
+            </div>
+            <div class="projects-content">
+                <div class="projects-gallery">
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Layout Cut Awax</h4>
+                            <p>Użyte technologie HTML5, CSS, Bootstrap 3
+                                <br>
+                                Strona w pełni RWD
+                            </p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/layout_cut_awax" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/layout_cut_awax/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/layout_cut_awax.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>Layout Cut</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Layout Cut Golden</h4>
+                            <p>Użyte technologie HTML5, CSS, Bootstrap 3
+                                <br>
+                                Strona w pełni RWD
+                            </p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/layout_cut-golden" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/layout_cut-golden/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/layout_cut_golden.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>Layout Cut</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Layout Cut Awax</h4>
+                            <p>Użyte technologie HTML5, CSS, Bootstrap 3
+                                <br>
+                                Strona w pełni RWD
+                            </p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/Layout_Cut_JWG" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/Layout_Cut_JWG/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/layout_cut_sansara.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>Layout Cut</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Paper-Rock-Scissors Game</h4>
+                            <p>Użyte technologie HTML5, CSS, <br>Vanilla JavaScript</p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/paper_rock_scissors_javascript" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/paper_rock_scissors_javascript/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/javascript_game.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Kanban App</h4>
+                            <p>Użyte technologie HTML5, CSS, MongoDB, Express, REACT, Node</p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/kanban-app" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <!--<a href="https://lipieta85.github.io/layout_cut_awax/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>-->
+                            </p>
+                        </div>
+                        <img src="images/kanban_app.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>MERN Stack</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>ScoreKeeper</h4>
+                            <p>Użyte technologie HTML5, CSS, REACT, JavaScript ES6</p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/scorekeeper" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/scorekeeper/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/React_app_2.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>REACT</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>SUDOKU</h4>
+                            <p>Użyte technologie React, JavaScript ES6, Webpack, CSS</p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/sudoku" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/sudoku/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/React_app_3.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>REACT</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Country App</h4>
+                            <p>Użyte technologie React, React-Router, Redux, JavaScript ES6, Webpack, CSS3, Bootstrap</p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/country-app" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/country-app/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/Country-App.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>REACT</p>
+                        </div>
+                    </div>
+                    <div class="projects-photos">
+                        <div class="overlay">
+                            <h4>Angular Shop</h4>
+                            <p>Użyte technologie Angular 6, HTML5, Bootstrap 3, CSS3</p>
+                            <p class="icons">
+                                <a href="https://github.com/Lipieta85/angular_shop" target="_blank">
+                                    <i class="fab fa-github fa-2x">
+                                        <br>
+                                        <span>Github</span>
+                                    </i>
+                                </a>
+                                <a href="https://lipieta85.github.io/angular_shop/" target="_blank">
+                                    <i class="fas fa-search-plus fa-2x">
+                                        <br>
+                                        <span>Live</span>
+                                    </i>
+                                </a>
+                            </p>
+                        </div>
+                        <img src="images/angular_shop.jpg" alt="picture">
+                        <div class="overlay-desc">
+                            <p>Angular</p>
                         </div>
                     </div>
                 </div>
-            </script>
-            <script>
-                var productsData = [
-                    {
-                        id: 'carousel-cell1',
-                        title: '>Layout Cut: Awax Site<',
-                        link: 'https://lipieta85.github.io/layout_cut_awax/',
-                        description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap. Strona w pełni RWD',
-                        reset: 'cell1',
-                        image: 'images/layout_cut_awax.jpg',
-                    },
-                    {
-                        id: 'carousel-cell2',
-                        title: '>Layout Cut: Golden Site<',
-                        link: 'https://lipieta85.github.io/layout_cut-golden/',
-                        description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap. Strona w pełni RWD',
-                        reset: 'none',
-                        image: 'images/layout_cut_golden.jpg',
-                    },
-                    {
-                        id: 'carousel-cell3',
-                        title: '>Layout Cut: Sansara Group<',
-                        description: 'Użyte technologie: HTML5, CSS3, Sass, Bootstrap, JavaScript, JQuery. Strona w pełni RWD',
-                        link: 'https://lipieta85.github.io/Layout_Cut_JWG/',
-                        reset: 'none',
-                        image: 'images/layout_cut_sansara.jpg',
-                    },
-                    {
-                        id: 'carousel-cell4',
-                        title: '>Paper Rock Scissors Game<',
-                        description: 'Użyte technologie: Vanilla JavaScript',
-                        link: 'https://lipieta85.github.io/paper_rock_scissors_javascript/',
-                        reset: 'none',
-                        image: 'images/javascript_game.jpg',
-                    },
-                    {
-                        id: "carousel-cell5",
-                        title: '>MERN Kanban-App<',
-                        description: 'Użyte technologie: Mongodb, Express, React, CSS3',
-                        link: 'https://github.com/Lipieta85/kanban-app',
-                        reset: 'none',
-                        image: 'images/kanban_app.jpg',
-                    },
-                    {
-                        id: "carousel-cell6",
-                        title: '>React JSON app<',
-                        description: 'Użyte technologie: REACT, Axios, JSON, CSS3, Bootstrap',
-                        link: 'https://lipieta85.github.io/Unamo_React_JSON_App/',
-                        reset: 'none',
-                        image: 'images/React_app_1.jpg',
-                    },
-                    {
-                        id: "carousel-cell7",
-                        title: '>Score-keeper<',
-                        description: 'Użyte technologie: React, CSS3, Javascript, plus testy',
-                        link: 'https://lipieta85.github.io/scorekeeper/',
-                        reset: 'none',
-                        image: 'images/React_app_2.jpg',
-                    },
-                    {
-                        id: "carousel-cell8",
-                        title: '>Sudoku<',
-                        description: 'Użyte technologie: React, CSS3',
-                        link: 'https://lipieta85.github.io/sudoku/',
-                        reset: 'none',
-                        image: 'images/React_app_3.jpg',
-                    },
-                    {
-                        id: 'carousel-cell9',
-                        title: '>Angular: Shop<',
-                        link: 'https://lipieta85.github.io/angular_shop/',
-                        description: 'Użyte technologie: Angular 6, TypeScript, HTML5, CSS3, Bootstrap',
-                        reset: 'none',
-                        image: 'images/angular_shop.jpg',
-                    },
-
-                ];
-            </script>
-            <a target="_blank" class="projects" href="https://github.com/Lipieta85?tab=repositories">>>> Więcej
-                zrealizowanych projektów <<<
-            </a> 
-        </div> 
+            </div>
+        </div>
     </section>
+
     <section class="contact" id="contact">
         <div class="container">
             <h1 class="contact-header">Kontakt</h1>
-                <p class="contact-text">Masz ciekawe zlecenie? Jesteś zainteresowany współpracą długoterminową? Super!</p>
-                <p class="contact-text">Napisz lub zadzwoń</p>
-                <p class="contact-text"><i class="fas fa-envelope"></i> rafal.lipieta1@wp.pl</p>
-                <p class="contact-text"><i class="fas fa-phone"></i> 883384288</p>
+            <p class="contact-text">Masz ciekawe zlecenie? Jesteś zainteresowany współpracą długoterminową? Super!</p>
+            <p class="contact-text">Napisz lub zadzwoń</p>
+            <p class="contact-text"><i class="fas fa-envelope"></i> rafal.lipieta1@wp.pl</p>
+            <p class="contact-text"><i class="fas fa-phone"></i> 883384288</p>
         </div>
     </section>
-                    
+
     <section class="footer">
         <div class="container">
             <p class="footer-content">Rafał Lipieta ® 2018</p>

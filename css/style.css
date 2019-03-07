@@ -1,5 +1,8 @@
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -145,6 +148,10 @@ body {
   }
   .header .container .navbar .collapse .navbar-nav {
     padding-right: 0;
+    text-align: center;
+  }
+  .header .container .navbar .collapse .navbar-nav .nav-item {
+    margin-left: 0;
   }
   .header .container .header-text {
     text-align: center;
@@ -158,18 +165,20 @@ body {
 
 @media (max-width: 767px) {
   .header {
-    height: 420px;
+    height: 510px;
+    padding: 0 0 50px 0;
   }
   .header .container .navbar {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
   }
   .header .container .navbar .navbar-brand {
-    padding-left: 30px;
+    padding-left: 0;
   }
   .header .container .navbar .logo {
     padding-left: 0;
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .header .container .navbar #button {
     margin-top: 60px;
@@ -177,16 +186,21 @@ body {
   .header .container .navbar .collapse .navbar-nav {
     flex-direction: column;
     padding-right: 0;
+    text-align: center;
+  }
+  .header .container .navbar .collapse .navbar-nav .nav-item {
+    margin-left: 0;
   }
   .header .container .header-text {
+    text-align: center;
+    padding-left: 0;
     padding-top: 50px;
-    padding-bottom: 30px;
   }
   .header .container .header-text .text-up {
     font-size: 35px;
   }
   .header .container .header-text .text-down {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -234,9 +248,6 @@ body {
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .about-me {
-    margin-top: 40px;
-  }
   .about-me .about-me-content .content-image {
     max-width: 400px;
     width: 100%;
@@ -247,8 +258,8 @@ body {
 
 @media (max-width: 767px) {
   .about-me {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
   }
   .about-me .about-me-header {
@@ -284,132 +295,147 @@ body {
   }
 }
 
-/* SECTION PORTFOLIO */
-.portfolio {
-  margin-top: 60px;
-  padding-bottom: 90px;
+.projects {
+  padding: 100px;
   background-color: #262626;
 }
 
-.portfolio .portfolio-header {
-  padding-top: 60px;
+.projects .projects-header {
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #FFF;
-}
-
-.portfolio .portfolio-header-text {
-  padding: 30px;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
-  color: #FFF;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.projects .projects-header-text {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.projects .projects-content .projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects .projects-content .projects-gallery .projects-photos {
+  max-width: 350px;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  margin: 15px 0 55px 0;
+}
+
+.projects .projects-content .projects-gallery .projects-photos img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 75%;
+  opacity: 0;
+  transition: 0.5s;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay h4 {
+  font-size: 17px;
   font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: 0.6s;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay p {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  padding: 17px;
+  transition: 0.6s;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay .icons {
+  background-color: #02AC46;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay .icons i {
+  color: #fff;
+  margin: 10px;
+  transition: 0.6s;
+}
+
+.projects .projects-content .projects-gallery .projects-photos:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay-desc {
+  max-width: 350px;
+  width: 100%;
+  height: 50px;
+  background-color: #02AC46;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projects .projects-content .projects-content-button {
+  padding-top: 30px;
   text-align: center;
 }
 
-.portfolio .portfolio-header-text .header-text-content {
-  color: #229024;
-}
-
-.portfolio .portfolio-header-text a {
+.projects .projects-content .projects-content-button .button {
   text-decoration: none;
-  text-transform: none;
-  margin-left: 12px;
+  padding: 15px 60px 15px 60px;
+  background-color: #b88b58;
+  font-size: 13px;
   color: #FFF;
-}
-
-.portfolio .portfolio-header-text a:hover {
-  color: #229024;
-}
-
-.portfolio .portfolio-carousel-cell {
-  background-size: cover;
-  color: #FFF;
-  padding-top: 100px;
-  width: 85%;
-  height: 440px;
-  margin: 0 auto;
-  counter-increment: carousel-cell;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-style: none;
   border-radius: 20px;
 }
 
-.portfolio .portfolio-carousel-cell .portfolio-content {
-  background-color: #262626;
-  color: #FFF;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  opacity: 0.7;
-}
-
-@keyframes buttonPulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.portfolio .portfolio-carousel-cell .portfolio-content .content-header:hover {
-  animation: buttonPulse 1s infinite;
-}
-
-.portfolio .portfolio-carousel-cell .portfolio-content .content-header .content-header-link {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.portfolio .projects {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  transition: .2s;
-  text-decoration: none;
-  padding-top: 40px;
-  color: #FFF;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.portfolio .projects:hover {
-  text-decoration: none;
-  color: #229024;
+.projects .projects-content .projects-content-button .button:hover {
+  background-color: #b4b4b4;
 }
 
 @media (max-width: 767px) {
-  .portfolio {
-    padding-bottom: 70px;
+  .projects {
+    padding: 50px;
   }
-  .portfolio .portfolio-header-text {
-    padding: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 17px;
+  .projects .projects-header-text {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 30px;
   }
-  .portfolio .portfolio-carousel-cell {
+  .projects .projects-content .projects-gallery .projects-photos .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-  }
-  .portfolio .portfolio-carousel-cell .content {
-    width: 70%;
-  }
-  .portfolio .projects {
-    text-align: center;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-size: 15px;
+    height: 100%;
+    opacity: 1;
   }
 }
 
 /* SECTION CONTACT */
 .contact {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding: 100px;
   background: url("../images/kontakt_background.jpg") center cover;
 }
 
@@ -426,7 +452,7 @@ body {
 
 @media (max-width: 767px) {
   .contact {
-    padding-top: 20px;
+    padding: 50px;
   }
 }
 
