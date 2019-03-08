@@ -308,7 +308,7 @@ body {
 }
 
 .projects {
-  padding: 100px;
+  padding: 100px 0 100px 0;
   background-color: #262626;
 }
 
@@ -333,15 +333,16 @@ body {
 .projects .projects-content .projects-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 .projects .projects-content .projects-gallery .projects-photos {
-  max-width: 350px;
+  max-width: 33.33%;
   width: 100%;
-  height: 250px;
+  height: 300px;
   position: relative;
-  margin: 15px 0 55px 0;
+  margin: 0 0 0 0;
+  border: 1px solid #262626;
 }
 
 .projects .projects-content .projects-gallery .projects-photos img {
@@ -372,7 +373,7 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
-  padding: 20px 0 15px 0;
+  padding: 45px 0 15px 0;
 }
 
 .projects .projects-content .projects-gallery .projects-photos .overlay .overlay-technologies {
@@ -403,53 +404,56 @@ body {
   transition-delay: 0.2s;
 }
 
-.projects .projects-content .projects-gallery .projects-photos .overlay-desc {
-  max-width: 350px;
-  width: 100%;
-  height: 50px;
-  background-color: #02AC46;
-  text-align: center;
-  padding: 15px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .projects .projects-content .projects-gallery:hover:after {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
   opacity: 0.9;
 }
 
-.projects .projects-content .projects-content-button {
-  padding-top: 30px;
+.projects .projects-more {
+  margin-top: 50px;
   text-align: center;
 }
 
-.projects .projects-content .projects-content-button .button {
-  text-decoration: none;
-  padding: 15px 60px 15px 60px;
-  background-color: #b88b58;
-  font-size: 13px;
-  color: #FFF;
-  font-weight: bold;
+.projects .projects-more .btn {
   text-transform: uppercase;
-  border-style: none;
-  border-radius: 20px;
-}
-
-.projects .projects-content .projects-content-button .button:hover {
-  background-color: #b4b4b4;
+  background-color: #229024;
+  border: none;
+  font-weight: 600;
 }
 
 @media (max-width: 767px) {
   .projects {
-    padding: 50px;
+    padding: 50px 0 50px 0;
   }
   .projects .projects-header-text {
     font-size: 25px;
     color: #fff;
     margin-bottom: 30px;
+  }
+  .projects .projects-content .projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .projects .projects-content .projects-gallery .projects-photos {
+    max-width: 50%;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0 0 0 0;
+    border: 1px solid #262626;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects .projects-content .projects-gallery .projects-photos {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0 0 0 0;
+    border: 1px solid #262626;
   }
 }
 
@@ -498,32 +502,50 @@ body {
 }
 
 /*
-.overlay {
-                    position: absolute;
-                    background-color: rgba(0, 0, 0, 0.7);
+.projects-content {
+        .projects-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .projects-photos {
+                max-width: 350px;
+                width: 100%;
+                height: 250px;
+                position: relative;
+                margin: 15px 0 55px 0;
+                img {
                     width: 100%;
-                    height: 75%;
-                    opacity: 0;
-                    transition: 0.5s;
-                    bottom: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-content: flex-end;
+                    height: 100%;
+                }
+                .overlay {
+                    position: absolute;
+                    background-color: rgba(#262626, 0.8);
+                    z-index: 5;
+                    margin: 0 auto;
+                    top: 8%;
+                    left: 8%;
+                    height: 85%;
+                    width: 85%;
+                    text-align: center;
+                    color: #000;
+                    visibility: hidden;
+                    -webkit-transition: all 0.4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
+                    -webkit-transform: rotateY(90deg);
+                    transform: rotateY(90deg);
                     .overlay-header {
                         font-size: 20px;
                         font-weight: bold;
                         color: white;
                         text-align: center;
                         padding: 20px 0 15px 0;
-                        transition: 0.6s;
                     }
                     .overlay-technologies {
+                        font-family: 'Open Sans', sans-serif;
                         font-size: 14px;
                         color: white;
                         font-weight: 600;
                         text-align: center;
-                        padding: 16px;
-                        transition: 0.6s;
                     }
                     .overlay-icons {
                         font-size: 12px;
@@ -536,9 +558,31 @@ body {
                     }
                 }
                 &:hover .overlay {
-                    height: 100%;
+                    visibility: visible;
+                    -webkit-transform: translate(0, 0%);
+                    transform: translate(0, 0%);
                     opacity: 1;
+                    -webkit-transition-delay: 0.2s;
+                    transition-delay: 0.2s;
                 }
+                .overlay-desc {
+                    max-width: 350px;
+                    width: 100%;
+                    height: 50px;
+                    background-color: #02AC46;
+                    text-align: center;
+                    padding: 15px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+            &:hover:after {
+                -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+                opacity: 0.9;
+            }
+        }
 
 */
 
