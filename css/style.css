@@ -17,7 +17,7 @@ body {
 .header {
   background-image: url("../images/header_obraz_3.png");
   background-size: cover;
-  height: 500px;
+  height: 457px;
   width: 100%;
 }
 
@@ -91,7 +91,8 @@ body {
 .header .container .header-text {
   text-align: left;
   padding-left: 30px;
-  padding-top: 100px;
+  padding-top: 90px;
+  padding-bottom: 100px;
   color: #FFF;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -115,6 +116,10 @@ body {
   font-size: 24px;
 }
 
+.header .container .header-text .text-down .text-down-last {
+  margin-bottom: 0;
+}
+
 .header .container .arrow {
   position: fixed;
   float: right;
@@ -129,7 +134,7 @@ body {
 
 @media (min-width: 767px) and (max-width: 991px) {
   .header {
-    height: 420px;
+    height: 480px;
   }
   .header .container .navbar {
     flex-direction: column;
@@ -156,7 +161,8 @@ body {
   .header .container .header-text {
     text-align: center;
     padding-top: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
   }
   .header .container .header-text .text-up {
     font-size: 50px;
@@ -165,8 +171,7 @@ body {
 
 @media (max-width: 767px) {
   .header {
-    height: 510px;
-    padding: 0 0 50px 0;
+    height: 405px;
   }
   .header .container .navbar {
     flex-direction: column;
@@ -178,7 +183,7 @@ body {
   }
   .header .container .navbar .logo {
     padding-left: 0;
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .header .container .navbar #button {
     margin-top: 60px;
@@ -194,13 +199,19 @@ body {
   .header .container .header-text {
     text-align: center;
     padding-left: 0;
-    padding-top: 50px;
+    padding: 50px 10px 50px 10px;
   }
   .header .container .header-text .text-up {
     font-size: 35px;
   }
   .header .container .header-text .text-down {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 457px) {
+  .header {
+    height: 448px;
   }
 }
 
@@ -245,6 +256,7 @@ body {
   padding-left: 10px;
   color: #262626;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
@@ -263,7 +275,7 @@ body {
     text-align: center;
   }
   .about-me .about-me-header {
-    padding-top: 30px;
+    padding-top: 0;
     margin-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
@@ -450,11 +462,14 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
+  margin-top: 0;
 }
 
 .contact .contact-text {
   text-align: center;
   font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
