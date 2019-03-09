@@ -22,9 +22,9 @@ body {
 /* HEADER */
 
 .header {
-    background-image: url("../images/header_obraz_3.png");
+    background-image: url("../images/laptop_background.jpg");
     background-size: cover;
-    height: 457px;
+    height: 600px;
     width: 100%;
     .container {
         padding: 0;
@@ -125,6 +125,7 @@ body {
 
 @media (min-width: 767px) and (max-width: 991px) {
     .header {
+        background-image: url("../images/laptop_background.png");
         height: 480px;
         .container {
             .navbar {
@@ -166,6 +167,7 @@ body {
 
 @media (max-width: 767px) {
     .header {
+        background-image: url("../images/laptop_background.png");
         height: 405px;
         .container {
             .navbar {
@@ -309,7 +311,7 @@ body {
 // SECTION PORTFOLIO //
 .projects {
     padding: 100px 0 100px 0;
-    background-color: #262626;
+    background-color: #29455B;
     .projects-header {
         text-align: center;
         font-size: 16px;
@@ -337,20 +339,20 @@ body {
                 height: 300px;
                 position: relative;
                 margin: 0 0 0 0;
-                border: 1px solid #262626;
+                border: 1px solid #000C1A;
                 img {
                     width: 100%;
                     height: 100%;
                 }
                 .overlay {
                     position: absolute;
-                    background-color: rgba(#262626, 0.8);
+                    background-color: rgba(#000C1A, 0.8);
                     z-index: 5;
                     margin: 0 auto;
-                    top: 8%;
-                    left: 8%;
-                    height: 85%;
-                    width: 85%;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
                     text-align: center;
                     color: #000;
                     visibility: hidden;
@@ -363,7 +365,7 @@ body {
                         font-weight: bold;
                         color: white;
                         text-align: center;
-                        padding: 45px 0 15px 0;
+                        padding: 70px 0 15px 0;
                     }
                     .overlay-technologies {
                         font-family: 'Open Sans', sans-serif;
@@ -403,7 +405,8 @@ body {
         text-align: center;
         .btn {
             text-transform: uppercase;
-            background-color: #229024;
+            background-color: #fff;
+            color: #000C1A;
             border: none;
             font-weight: 600;
         }
@@ -482,7 +485,7 @@ body {
 /* FOOTER */
 
 .footer {
-    background-color: #262626;
+    background-color: #000C1A;
     padding-top: 30px;
     padding-bottom: 30px;
     .footer-content {
