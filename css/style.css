@@ -472,6 +472,7 @@ body {
   text-align: center;
   font-weight: bold;
   margin-top: 0;
+  color: #000C1A;
 }
 
 .contact .contact-text {
@@ -479,6 +480,7 @@ body {
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 0;
+  color: #000C1A;
 }
 
 @media (max-width: 767px) {

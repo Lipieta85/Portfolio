@@ -4,6 +4,7 @@ $third-color: #b4b4b4;
 $fourth-color: red;
 $fifth-color: black;
 $six-color: #948c8c;
+
 * {
     box-sizing: border-box;
 }
@@ -309,6 +310,7 @@ body {
 }
 
 // SECTION PORTFOLIO //
+
 .projects {
     padding: 100px 0 100px 0;
     background-color: #29455B;
@@ -467,12 +469,14 @@ body {
         text-align: center;
         font-weight: bold;
         margin-top: 0;
+        color: #000C1A;
     }
     .contact-text {
         text-align: center;
         font-weight: bold;
         margin-top: 15px;
         margin-bottom: 0;
+        color: #000C1A;
     }
 }
 
