@@ -89,9 +89,9 @@ body {
 }
 
 .header .container .header-text {
+  padding-top: 145px;
   text-align: left;
   padding-left: 30px;
-  padding-top: 90px;
   padding-bottom: 100px;
   color: #FFF;
   animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -129,7 +129,7 @@ body {
 }
 
 .header .container .arrow .arrow-icon {
-  color: #229024;
+  color: #50585B;
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
@@ -244,8 +244,6 @@ body {
 }
 
 .about-me .about-me-content .content-image {
-  max-width: 400px;
-  width: 100%;
   height: 250px;
   padding-right: 10px;
 }
@@ -387,7 +385,6 @@ body {
 }
 
 .projects .projects-content .projects-gallery .projects-photos .overlay .overlay-icons {
-  font-size: 12px;
   text-align: center;
 }
 
@@ -395,6 +392,12 @@ body {
   color: #fff;
   margin: 10px;
   transition: 0.6s;
+}
+
+.projects .projects-content .projects-gallery .projects-photos .overlay .overlay-icons i span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .projects .projects-content .projects-gallery .projects-photos:hover .overlay {
