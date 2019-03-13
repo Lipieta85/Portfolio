@@ -14,57 +14,68 @@ body {
 }
 
 /* HEADER */
-.header {
-  background-image: url("../images/laptop_background.jpg");
-  background-size: cover;
-  height: 600px;
-  width: 100%;
-}
-
-.header .container {
+.header .jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
   padding: 0;
+  height: 100vh;
 }
 
-.header .container .navbar {
+.header .jumbotron video {
+  position: absolute;
   z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.header .jumbotron .container {
+  position: relative;
+  z-index: 10;
+}
+
+.header .jumbotron .container .navbar {
   padding: 2px;
   display: flex;
   flex-direction: row;
 }
 
-.header .container .navbar .navbar-brand {
+.header .jumbotron .container .navbar .navbar-brand {
   display: none;
   color: #FFF;
   padding-left: 30px;
 }
 
-.header .container .navbar .logo {
+.header .jumbotron .container .navbar .logo {
   padding-left: 30px;
   padding-top: 20px;
 }
 
-.header .container .navbar .logo .image {
+.header .jumbotron .container .navbar .logo .image {
   max-width: 120px;
   height: 50px;
 }
 
-.header .container .navbar .logo .navbar-toggler-icon {
+.header .jumbotron .container .navbar .logo .navbar-toggler-icon {
   color: #FFF;
   font-size: 30px;
 }
 
-.header .container .navbar .collapse .navbar-nav {
+.header .jumbotron .container .navbar .collapse .navbar-nav {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding-right: 30px;
 }
 
-.header .container .navbar .collapse .navbar-nav .nav-item {
+.header .jumbotron .container .navbar .collapse .navbar-nav .nav-item {
   margin-left: 38px;
 }
 
-.header .container .navbar .collapse .navbar-nav .nav-item:after {
+.header .jumbotron .container .navbar .collapse .navbar-nav .nav-item:after {
   content: '';
   display: block;
   margin: auto;
@@ -74,12 +85,12 @@ body {
   transition: width .2s ease, background-color .2s ease;
 }
 
-.header .container .navbar .collapse .navbar-nav .nav-item:hover:after {
+.header .jumbotron .container .navbar .collapse .navbar-nav .nav-item:hover:after {
   width: 85%;
   background: #FFF;
 }
 
-.header .container .navbar .collapse .navbar-nav .nav-item .nav-link {
+.header .jumbotron .container .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: #FFF;
   text-decoration: none;
   font-size: 20px;
@@ -88,8 +99,8 @@ body {
   font-weight: 400;
 }
 
-.header .container .header-text {
-  padding-top: 145px;
+.header .jumbotron .container .header-text {
+  padding-top: 27vh;
   text-align: left;
   padding-left: 30px;
   padding-bottom: 100px;
@@ -106,21 +117,21 @@ body {
   }
 }
 
-.header .container .header-text .text-up {
+.header .jumbotron .container .header-text .text-up {
   font-size: 60px;
   font-weight: 900;
   line-height: 1.2;
 }
 
-.header .container .header-text .text-down {
+.header .jumbotron .container .header-text .text-down {
   font-size: 24px;
 }
 
-.header .container .header-text .text-down .text-down-last {
+.header .jumbotron .container .header-text .text-down .text-down-last {
   margin-bottom: 0;
 }
 
-.header .container .arrow {
+.header .jumbotron .container .arrow {
   position: fixed;
   float: right;
   right: 30px;
@@ -128,7 +139,7 @@ body {
   z-index: 1;
 }
 
-.header .container .arrow .arrow-icon {
+.header .jumbotron .container .arrow .arrow-icon {
   color: #50585B;
 }
 
