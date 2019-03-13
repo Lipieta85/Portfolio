@@ -27,6 +27,7 @@ body {
         overflow: hidden;
         background-color: black;
         padding: 0;
+        margin: 0;
         height: 100vh;
         video {
             position: absolute;
@@ -222,17 +223,12 @@ body {
     }
 }
 
-@media (max-width: 457px) {
-    .header {
-        height: 448px;
-    }
-}
-
 /* SECTION ABOUT ME */
 
 .about-me {
     padding-top: 100px;
     padding-bottom: 100px;
+    margin: 0;
     text-align: center;
     .about-me-header {
         margin-bottom: 0.5rem;
