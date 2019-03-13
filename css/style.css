@@ -144,80 +144,72 @@ body {
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .header {
-    background-image: url("../images/laptop_background.png");
-    height: 480px;
-  }
-  .header .container .navbar {
+  .header .jumbotron .container .navbar {
     flex-direction: column;
     justify-content: center;
   }
-  .header .container .navbar .navbar-brand {
+  .header .jumbotron .container .navbar .navbar-brand {
     padding-left: 30px;
     display: none;
   }
-  .header .container .navbar .logo {
+  .header .jumbotron .container .navbar .logo {
     padding-left: 0px;
-    padding-top: 30px;
+    padding-top: 110px;
   }
-  .header .container .navbar #button {
+  .header .jumbotron .container .navbar #button {
     margin-top: 60px;
   }
-  .header .container .navbar .collapse .navbar-nav {
+  .header .jumbotron .container .navbar .collapse .navbar-nav {
     padding-right: 0;
     text-align: center;
   }
-  .header .container .navbar .collapse .navbar-nav .nav-item {
+  .header .jumbotron .container .navbar .collapse .navbar-nav .nav-item {
     margin-left: 0;
   }
-  .header .container .header-text {
+  .header .jumbotron .container .header-text {
     text-align: center;
     padding-top: 35px;
     padding-bottom: 100px;
     margin-bottom: 0;
   }
-  .header .container .header-text .text-up {
+  .header .jumbotron .container .header-text .text-up {
     font-size: 50px;
   }
 }
 
 @media (max-width: 767px) {
-  .header {
-    background-image: url("../images/laptop_background.png");
-    height: 405px;
-  }
-  .header .container .navbar {
+  .header .jumbotron .container .navbar {
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
-  .header .container .navbar .navbar-brand {
+  .header .jumbotron .container .navbar .navbar-brand {
     padding-left: 0;
   }
-  .header .container .navbar .logo {
+  .header .jumbotron .container .navbar .logo {
     padding-left: 0;
-    padding-top: 20px;
+    padding-top: 100px;
   }
-  .header .container .navbar #button {
+  .header .jumbotron .container .navbar #button {
     margin-top: 60px;
   }
-  .header .container .navbar .collapse .navbar-nav {
+  .header .jumbotron .container .navbar .collapse .navbar-nav {
     flex-direction: column;
     padding-right: 0;
     text-align: center;
   }
-  .header .container .navbar .collapse .navbar-nav .nav-item {
+  .header .jumbotron .container .navbar .collapse .navbar-nav .nav-item {
     margin-left: 0;
   }
-  .header .container .header-text {
+  .header .jumbotron .container .header-text {
     text-align: center;
     padding-left: 0;
     padding: 50px 10px 50px 10px;
   }
-  .header .container .header-text .text-up {
+  .header .jumbotron .container .header-text .text-up {
     font-size: 35px;
   }
-  .header .container .header-text .text-down {
+  .header .jumbotron .container .header-text .text-down {
     font-size: 20px;
   }
 }

@@ -19,7 +19,7 @@ $('nav, .arrow').find('a').click(function (e) {
 $(window).scroll('change', function () {
     var scrolled_val = $(document).scrollTop().valueOf();
     if (scrolled_val > 250) {
-        $('.navbar').css({ 'position': 'fixed', 'z-index': '10', 'width': '100%', 'background-color': '#250500', 'border-bottom': '1px solid #CCC', 'padding-top': '5px;', 'padding-bottom': '10px', 'text-align': 'center' });
+        $('.navbar').css({ 'position': 'fixed', 'z-index': '10', 'width': '100%', 'background-color': '#000C1A', 'border-bottom': '1px solid #CCC', 'padding-top': '5px;', 'padding-bottom': '10px', 'text-align': 'center' });
         $('.navbar').find('a').css({ 'color': '#FFF', 'font-size': '25px', 'padding-top': '13px' });
         $('.navbar-brand').css({ 'display': 'block', 'color': '#FFF' })
         if (window.matchMedia('(max-width: 991px)').matches)
