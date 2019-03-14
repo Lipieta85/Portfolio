@@ -20,7 +20,7 @@ body {
   background-color: black;
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: 65vh;
 }
 
 .header .jumbotron video {
@@ -101,10 +101,9 @@ body {
 }
 
 .header .jumbotron .container .header-text {
-  padding-top: 27vh;
+  padding-top: 12vh;
   text-align: left;
   padding-left: 30px;
-  padding-bottom: 100px;
   color: #FFF;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -145,6 +144,9 @@ body {
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
+  .header .jumbotron {
+    height: 77vh;
+  }
   .header .jumbotron .container .navbar {
     flex-direction: column;
     justify-content: center;
@@ -155,7 +157,7 @@ body {
   }
   .header .jumbotron .container .navbar .logo {
     padding-left: 0px;
-    padding-top: 110px;
+    padding-top: 20px;
   }
   .header .jumbotron .container .navbar #button {
     margin-top: 60px;
@@ -170,11 +172,11 @@ body {
   .header .jumbotron .container .header-text {
     text-align: center;
     padding-top: 35px;
-    padding-bottom: 100px;
     margin-bottom: 0;
+    padding-bottom: 100px;
   }
   .header .jumbotron .container .header-text .text-up {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -189,10 +191,10 @@ body {
   }
   .header .jumbotron .container .navbar .logo {
     padding-left: 0;
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .header .jumbotron .container .navbar #button {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .header .jumbotron .container .navbar .collapse .navbar-nav {
     flex-direction: column;
@@ -205,13 +207,19 @@ body {
   .header .jumbotron .container .header-text {
     text-align: center;
     padding-left: 0;
-    padding: 50px 10px 50px 10px;
+    padding: 40px 10px 40px 10px;
   }
   .header .jumbotron .container .header-text .text-up {
     font-size: 35px;
   }
   .header .jumbotron .container .header-text .text-down {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 458px) {
+  .header .jumbotron {
+    height: 75vh;
   }
 }
 
@@ -424,7 +432,14 @@ body {
   background-color: #fff;
   color: #000C1A;
   border: none;
+  border-radius: 15px;
   font-weight: 600;
+  transition: .2s;
+}
+
+.projects .projects-more .btn:hover {
+  background-color: #000C1A;
+  color: #fff;
 }
 
 @media (max-width: 767px) {

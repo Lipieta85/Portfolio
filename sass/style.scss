@@ -4,6 +4,7 @@ $third-color: #b4b4b4;
 $fourth-color: red;
 $fifth-color: black;
 $six-color: #948c8c;
+
 * {
     box-sizing: border-box;
 }
@@ -28,7 +29,7 @@ body {
         background-color: black;
         padding: 0;
         margin: 0;
-        height: 100vh;
+        height: 65vh;
         video {
             position: absolute;
             z-index: 1;
@@ -96,10 +97,9 @@ body {
                 }
             }
             .header-text {
-                padding-top: 27vh;
+                padding-top: 12vh;
                 text-align: left;
                 padding-left: 30px;
-                padding-bottom: 100px;
                 color: #FFF;
                 animation: 1s ease-out 0s 1 slideInFromLeft;
                 @keyframes slideInFromLeft {
@@ -139,6 +139,7 @@ body {
 @media (min-width: 767px) and (max-width: 991px) {
     .header {
         .jumbotron {
+            height: 77vh;
             .container {
                 .navbar {
                     flex-direction: column;
@@ -149,7 +150,7 @@ body {
                     }
                     .logo {
                         padding-left: 0px;
-                        padding-top: 110px;
+                        padding-top: 20px;
                     }
                     #button {
                         margin-top: 60px;
@@ -167,10 +168,10 @@ body {
                 .header-text {
                     text-align: center;
                     padding-top: 35px;
-                    padding-bottom: 100px;
                     margin-bottom: 0;
+                    padding-bottom: 100px;
                     .text-up {
-                        font-size: 50px;
+                        font-size: 45px;
                     }
                 }
             }
@@ -191,10 +192,10 @@ body {
                     }
                     .logo {
                         padding-left: 0;
-                        padding-top: 100px;
+                        padding-top: 20px;
                     }
                     #button {
-                        margin-top: 60px;
+                        margin-top: 40px;
                     }
                     .collapse {
                         .navbar-nav {
@@ -210,7 +211,7 @@ body {
                 .header-text {
                     text-align: center;
                     padding-left: 0;
-                    padding: 50px 10px 50px 10px;
+                    padding: 40px 10px 40px 10px;
                     .text-up {
                         font-size: 35px;
                     }
@@ -219,6 +220,14 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 458px) {
+    .header {
+        .jumbotron {
+            height: 75vh;
         }
     }
 }
@@ -315,6 +324,7 @@ body {
 }
 
 // SECTION PORTFOLIO //
+
 .projects {
     padding: 100px 0 100px 0;
     background-color: #29455B;
@@ -418,7 +428,13 @@ body {
             background-color: #fff;
             color: #000C1A;
             border: none;
+            border-radius: 15px;
             font-weight: 600;
+            transition: .2s;
+            &:hover {
+                background-color: #000C1A;
+                color: #fff;
+            }
         }
     }
 }
