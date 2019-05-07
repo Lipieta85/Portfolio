@@ -98,3 +98,15 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+// LAX PLUGIN
+
+window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
